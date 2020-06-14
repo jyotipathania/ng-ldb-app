@@ -16,12 +16,11 @@ export class JoinUsComponent implements OnInit {
   }
 
   ngAfterViewInit() {
-    setTimeout(()=>{
       this.countryService.getCountriesList().subscribe((data)=>{
         this.AllCountryList = data
       })
       console.log(this.AllCountryList)
-    },5000)
+   
     
   }
  

@@ -38,16 +38,16 @@ export class CountryService {
  //this.accessToken =  this.httpClient.get("https://www.universal-tutorial.com/api/getaccesstoken", {'headers':this.headersToken});
 
  getAccessToken() {
-    this.httpClient.get("https://www.universal-tutorial.com/api/getaccesstoken", {headers:{"Accept": "application/json","user-email": `${this.user_email}`,"api-token": `${this.API_Key}`}}).subscribe((data)=>{
-      return  this.accessToken = data
-    });
+    return this.httpClient.get("https://www.universal-tutorial.com/api/getaccesstoken", {headers:{"Accept": "application/json","user-email": `${this.user_email}`,"api-token": `${this.API_Key}`}})
  }
   
 
-   getCountriesList() {
-    
+   /*getCountriesList() {    
        return this.httpClient.get("https://www.universal-tutorial.com/api/countries/", { headers: {Authorization: `Bearer ${this.accessToken['auth_token']}`, Accept: "application/json"}});
    
-     
-    }
+    }*/
+    getCountriesList() {    
+      return this.httpClient.get("https://www.universal-tutorial.com/api/countries/", { headers: {Accept: "application/json"}});
+  
+   }
 }

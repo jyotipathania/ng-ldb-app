@@ -50,4 +50,11 @@ export class CountryService {
       return this.httpClient.get("https://www.universal-tutorial.com/api/countries/", { headers: {Accept: "application/json"}});
   
    }
+   getStatesList(country:any) {
+    return this.httpClient.get("https://www.universal-tutorial.com/api/states/"+country,  { headers: {Accept: "application/json"}})
+  }
+
+   getCitiesList(state:any) {
+     return this.httpClient.get("https://www.universal-tutorial.com/api/cities/"+state,  { headers: {Accept: "application/json"}})
+   }
 }

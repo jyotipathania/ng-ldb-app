@@ -43,58 +43,241 @@
   
         <div class="w-lg-80 mx-auto">
           <!-- Contacts Form -->
-          <form>
+          <form [formGroup]="joinusForm" (ngSubmit)="onSubmit(joinusForm)">
             <div class="form-row">
                 <div class="form-group col-md-6">
                   <label for="firstName">First Name</label>
-                  <input type="text" class="form-control" id="firstName" placeholder="First Name">
+                  <input 
+                    type="text" 
+                    class="form-control" 
+                    [ngClass]="{
+                      'is-invalid': joinusForm.get('firstName').invalid && 
+                                    joinusForm.get('firstName').touched,
+                        'is-valid': joinusForm.get('firstName').valid && 
+                                    joinusForm.get('firstName').touched
+                    }" 
+                    id="firstName" 
+                    formControlName="firstName" 
+                    placeholder="First Name">
+                  <div class="invalid-feedback" *ngIf="joinusForm.get('firstName').errors?.required">
+                    Input can't be empty.
+                  </div>
                 </div>
                 <div class="form-group col-md-6">
                   <label for="lastName">Last Name</label>
-                  <input type="text" class="form-control" id="lastName" placeholder="Last Name">
+                  <input 
+                    type="text" 
+                    class="form-control" 
+                    [ngClass]="{
+                      'is-invalid': joinusForm.get('lastName').invalid && 
+                                    joinusForm.get('lastName').touched,
+                        'is-valid': joinusForm.get('lastName').valid && 
+                                    joinusForm.get('lastName').touched
+                    }"
+                    id="lastName" 
+                    formControlName="lastName" 
+                    placeholder="Last Name">
+                  <div class="invalid-feedback" *ngIf="joinusForm.get('lastName').errors?.required">
+                    Input can't be empty.
+                  </div>
                 </div>
               </div>
             <div class="form-row">
               <div class="form-group col-md-6">
                 <label for="userEmail">Email</label>
-                <input type="email" class="form-control" id="userEmail" placeholder="Email">
+                <input 
+                  type="email" 
+                  class="form-control" 
+                  [ngClass]="{
+                    'is-invalid': joinusForm.get('userEmail').invalid && 
+                                  joinusForm.get('userEmail').touched,
+                      'is-valid': joinusForm.get('userEmail').valid &&
+                                  joinusForm.get('userEmail').touched            
+                  }"
+                  id="userEmail" 
+                  formControlName="userEmail" 
+                  placeholder="Email">
+                <div class="invalid-feedback" *ngIf="joinusForm.get('userEmail').errors?.required">
+                  Input can't be empty.
+                </div>
+                <div class="invalid-feedback" *ngIf="joinusForm.get('userEmail').errors?.pattern">
+                  Invalid Email id.
+                </div>
               </div>       
               
               <div class="form-group col-md-6">
-                <label for="userPeselorPassport">Enter Number</label>
-                <input type="text" class="form-control" id="userPeselorPassport" placeholder="">
+                <label for="userPeselorPassport">Pessel/Passport Id</label>
+                <input 
+                    type="text" 
+                    class="form-control" 
+                    [ngClass]="{
+                      'is-invalid': joinusForm.get('userPeselorPassport').invalid &&
+                                    joinusForm.get('userPeselorPassport').touched,
+                        'is-valid': joinusForm.get('userPeselorPassport').valid &&
+                                    joinusForm.get('userPeselorPassport').touched              
+                    }"
+                    id="userPeselorPassport" 
+                    formControlName="userPeselorPassport" 
+                    placeholder="Pessel/Passport Id">
+                <div class="invalid-feedback" *ngIf="joinusForm.get('userPeselorPassport').errors?.required">
+                  Input can't be empty.
+                </div>
               </div> 
             </div>
+
+            <div formGroupName="address">
             <div class="form-group">
               <label for="inputAddress">Address</label>
-              <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+              <input 
+                  type="text" 
+                  class="form-control" 
+                  [ngClass]="{
+                    'is-invalid': joinusForm.get('address.inputAddress').invalid &&
+                                  joinusForm.get('address.inputAddress').touched,
+                      'is-valid': joinusForm.get('address.inputAddress').valid &&
+                                  joinusForm.get('address.inputAddress').touched         
+                  }"
+                  id="inputAddress" 
+                  formControlName="inputAddress" 
+                  placeholder="1234 Main St">
+              <div class="invalid-feedback" *ngIf="joinusForm.get('address.inputAddress').errors?.required">
+                Input can't be empty.
+              </div>
             </div>
             <div class="form-group">
               <label for="inputAddress2">Address 2</label>
-              <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+              <input 
+                  type="text" 
+                  class="form-control" 
+                  [ngClass]="{
+                    'is-invalid': joinusForm.get('address.inputAddress2').invalid &&
+                                  joinusForm.get('address.inputAddress2').touched,
+                      'is-valid': joinusForm.get('address.inputAddress2').valid &&
+                                  joinusForm.get('address.inputAddress2').touched                
+                  }"
+                  id="inputAddress2" 
+                  formControlName="inputAddress2" 
+                  placeholder="Apartment, studio, or floor">
+              <div class="invalid-feedback" *ngIf="joinusForm.get('address.inputAddress2').errors?.required">
+                Input can't be empty.
+              </div>
             </div>
             <div class="form-row">
-              <div class="form-group col-md-3">
+              <div class="form-group col-md-4">
                 <label for="inputCountry">Select Country</label>
-                <select id="inputCountry" class="form-control" [(ngModel)] = "selectedCountry" [ngModelOptions]="{standalone: true}">
-                  <option *ngFor = "let option of AllCountryList" [ngValue]="option.country_short_name">{{option.country_name}}</option>
+                <select 
+                    id="inputCountry" 
+                    formControlName="inputCountry" 
+                    [attr.disabled]="noEditable"
+                    class="form-control"
+                    [(ngModel)] = "selectedCountry"  
+                    (change)="changeCountryTrigger($event.target.selectedOptions[0].label)"
+                    >                    
+                  <option 
+                      *ngFor = "let option of AllCountryList" 
+                      [ngValue]="option.country_short_name"
+                      >{{option.country_name}}</option>
                 </select>
-              </div>
-              <div class="form-group col-md-3">
-                <label for="inputCity">City</label>
-                <input type="text" class="form-control" id="inputCity">
-              </div>
+              </div>              
+             
               <div class="form-group col-md-4">
                 <label for="inputState">State</label>
-                <select id="inputState" class="form-control">
-                  <option selected>Choose...</option>
-                  <option>...</option>
+                <select 
+                    id="inputState" 
+                    formControlName="inputState" 
+                    class="form-control"                     
+                    [ngClass]="{
+                      'is-invalid': joinusForm.get('address.inputState').invalid &&
+                                    joinusForm.get('address.inputState').touched,
+                        'is-valid': joinusForm.get('address.inputState').valid &&
+                                    joinusForm.get('address.inputState').touched
+                    }"
+                    [(ngModel)] = "selectedState" 
+                    (change)="fetchCities($event.target.selectedOptions[0].label)"
+                    >
+                    <option [ngValue]="undefined" disabled="true" hidden [selected]="true">Please select state</option>
+                  <option 
+                      *ngFor="let state of states" 
+                      [ngValue]="state.state_name"
+                      >{{state.state_name}}</option>
                 </select>
+                <div class="invalid-feedback" *ngIf="joinusForm.get('address.inputState').errors?.required">
+                  Please select a valid state.
+                </div>
               </div>
-              <div class="form-group col-md-2">
+              <div class="form-group col-md-4" *ngIf="!isCitiesDataFetched">
+                <label for="inputCity">City </label>
+                <select 
+                    id="inputCity" 
+                    formControlName="inputCity" 
+                    [attr.disabled]="isCitiesDataFetched? '': null"
+                    class="form-control" 
+                    [ngClass]="{
+                      'is-invalid': joinusForm.get('address.inputCity').invalid &&
+                                    joinusForm.get('address.inputCity').touched &&
+                                    !(cities.length > 0),
+                        'is-valid': joinusForm.get('address.inputCity').valid &&
+                                    joinusForm.get('address.inputCity').touched &&
+                                    (cities.length > 0)
+                    }"
+                    >
+                  <option 
+                      *ngFor="let city of cities" 
+                      [ngValue]="city.city_name"
+                      >{{city.city_name}}</option>
+                </select>
+                <div class="invalid-feedback"  *ngIf="joinusForm.get('address.inputCity').errors?.required">
+                  Please select a valid city.
+                </div>
+              </div>
+              <div class="form-group col-md-4">
                 <label for="inputZip">Zip</label>
-                <input type="text" class="form-control" id="inputZip">
+                <input 
+                    type="text" 
+                    formControlName="inputZip" 
+                    class="form-control" 
+                    [ngClass]="{
+                      'is-invalid': joinusForm.get('address.inputZip').invalid &&
+                                    joinusForm.get('address.inputZip').touched,
+                        'is-valid': joinusForm.get('address.inputZip').valid &&
+                                    joinusForm.get('address.inputZip').touched 
+                    }"
+                    id="inputZip"
+                    mask="00-000"
+                    [validation]="true"
+                    placeholder="Zipcode"
+                    >
+                <div class="invalid-feedback" *ngIf="joinusForm.get('address.inputZip').errors?.required">
+                  Input can't be empty.
+                </div>
+                <div class="invalid-feedback" *ngIf="joinusForm.get('address.inputZip').errors?.pattern">
+                  Invalid zipcode.
+                </div>
               </div>
+              <div class="form-group">
+                <label for="inputPhone">Phone</label>
+                <input 
+                    type="text" 
+                    class="form-control" 
+                    [ngClass]="{
+                      'is-invalid': joinusForm.get('address.inputPhone').invalid &&
+                                    joinusForm.get('address.inputPhone').touched,
+                        'is-valid': joinusForm.get('address.inputPhone').valid &&
+                                    joinusForm.get('address.inputPhone').touched         
+                    }"
+                    id="inputPhone" 
+                    formControlName="inputPhone" 
+                    prefix="+48 " mask="00 000 00 00"
+                    [validation]="true"
+                    placeholder="eg: 54 545 54 54">
+                <div class="invalid-feedback" *ngIf="joinusForm.get('address.inputPhone').errors?.required">
+                  Input can't be empty.
+                </div>
+                <div class="invalid-feedback" *ngIf="!joinusForm.get('address.inputPhone').valid && !joinusForm.get('address.inputPhone').errors?.required">
+                  Invalid phone number.
+                </div>
+              </div>
+            </div>
             </div>
           
             <button type="submit" class="btn btn-primary">Submit</button>

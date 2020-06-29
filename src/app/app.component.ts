@@ -13,9 +13,14 @@ export class AppComponent {
   constructor (private countryService: CountryService, private tokenStorage: TokenStorageService){}
 
   ngOnInit():void {
-    let getTokenData = this.countryService.getAccessToken().subscribe((data)=>{
-      this.tokenStorage.saveCountryToken(data['auth_token'])
-    });
+    if(this.tokenStorage.getCountryToken()) {
+        this.tokenStorage.saveCountryToken(this.tokenStorage.getCountryToken())
+    } else {
+      let getTokenData = this.countryService.getAccessToken().subscribe((data)=>{
+        this.tokenStorage.saveCountryToken(data['auth_token'])
+      });
+    }
+   
 
     
    

@@ -35,15 +35,22 @@
 <div class="contact-form">
     <div class="container space-2 space-lg-3">
         <!-- Title -->
-        <div class="w-md-80 w-lg-50 text-center mx-md-auto mb-5 mb-md-9">
+        <div #scrollToDiv class="w-md-80 w-lg-50 text-center mx-md-auto mb-5 mb-md-9">
           <h2>Tell us about yourself</h2>
           <p>Whether you have questions or you would just like to say hello, contact us.</p>
         </div>
         <!-- End Title -->
+
+        <div  *ngIf="isValidFormSubmitted" class="alert alert-success alert-dismissible fade show" role="alert">
+          <strong>👏 Congratulations!</strong> We have received your request will get back to you as soon as possible.
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
   
         <div class="w-lg-80 mx-auto">
           <!-- Contacts Form -->
-          <form [formGroup]="joinusForm" (ngSubmit)="onSubmit(joinusForm)">
+          <form  [formGroup]="joinusForm" (ngSubmit)="onSubmit(joinusForm)">
             <div class="form-row">
                 <div class="form-group col-md-6">
                   <label for="firstName">First Name</label>
@@ -254,7 +261,7 @@
                   Invalid zipcode.
                 </div>
               </div>
-              <div class="form-group">
+              <div class="form-group col-md-4">
                 <label for="inputPhone">Phone</label>
                 <input 
                     type="text" 
@@ -280,7 +287,7 @@
             </div>
             </div>
           
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn btn-primary" >Submit</button>
           </form>
        
         </div>

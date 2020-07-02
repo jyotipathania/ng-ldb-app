@@ -1013,11 +1013,6 @@ footer .footer-content {
   
 }
 
-@media (max-width: 992px) {
-  .contact-form {
-    padding: 45px 0;
-  }
-}
 
 footer .right-content {
   align-self: center;

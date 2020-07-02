@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ElementRef, ViewChild } from '@angular/core';
 import { CountryService } from '../country.service';
 import { FormControl, FormGroup, Validators, FormBuilder } from '@angular/forms';
 
@@ -8,6 +8,8 @@ import { FormControl, FormGroup, Validators, FormBuilder } from '@angular/forms'
   styleUrls: ['./join-us.component.scss']
 })
 export class JoinUsComponent implements OnInit {
+  @ViewChild('scrollToDiv')  myscrollToDiv: ElementRef; 
+  isValidFormSubmitted:any = null;
   selectedCountry:string = "PL";
   selectedCity:string;
   selectedState:string;
@@ -22,7 +24,11 @@ export class JoinUsComponent implements OnInit {
   //https://www.concretepage.com/angular-2/angular-2-4-email-validation-example
   joinusForm: FormGroup;
 
-  constructor(private countryService: CountryService, private fb: FormBuilder) { }
+  constructor(
+              private countryService: CountryService, 
+              private fb: FormBuilder, 
+              private el: ElementRef
+              ) { }
  
   ngOnInit(): void {
     this.joinusForm = this.fb.group({
@@ -53,8 +59,22 @@ export class JoinUsComponent implements OnInit {
 
   onSubmit(form: FormGroup) {
     debugger;
-    console.log("FirstName: ", form.value.firstName);
-    console.log("LastName: ", form.value.lastName);
+    this.isValidFormSubmitted = false;
+    if(form.invalid) {
+      for (const key of Object.keys(form.controls)) {
+        if (form.controls[key].invalid) {
+          const invalidControl = this.el.nativeElement.querySelector('[formcontrolname="' + key + '"]');
+          invalidControl.focus();
+          break;
+       }
+  }
+      return;
+    }
+    this.myscrollToDiv.nativeElement.scrollIntoView();
+   
+    this.isValidFormSubmitted = true;
+    console.log("FirstName: ", form.value);
+    form.reset();
   }
 
   ngAfterViewInit() {

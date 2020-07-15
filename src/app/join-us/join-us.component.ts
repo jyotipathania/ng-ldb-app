@@ -1,6 +1,7 @@
 import { Component, OnInit, ElementRef, ViewChild } from '@angular/core';
 import { CountryService } from '../country.service';
 import { FormControl, FormGroup, Validators, FormBuilder } from '@angular/forms';
+import { SendMailServiceService } from '../services/send-mail-service.service';
 
 @Component({
   selector: 'app-join-us',
@@ -27,7 +28,8 @@ export class JoinUsComponent implements OnInit {
   constructor(
               private countryService: CountryService, 
               private fb: FormBuilder, 
-              private el: ElementRef
+              private el: ElementRef,
+              private sendmailservice: SendMailServiceService
               ) { }
  
   ngOnInit(): void {
@@ -72,8 +74,17 @@ export class JoinUsComponent implements OnInit {
     }
     this.myscrollToDiv.nativeElement.scrollIntoView();
    
-    this.isValidFormSubmitted = true;
+    
     console.log("FirstName: ", form.value);
+    this.sendmailservice.sendEmail(form.value).
+    subscribe(data => {
+      let msg = data['message']
+      this.isValidFormSubmitted = true;
+      //alert(msg);
+      // console.log(data, "success");
+    }, error => {
+      console.error(error, "error");
+    } );
     form.reset();
   }
 

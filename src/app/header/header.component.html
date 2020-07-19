@@ -21,13 +21,12 @@
                         <!-- ***** Logo End ***** -->
                         <!-- ***** Menu Start ***** -->
                         <ul class="nav">
-                            <li class="scroll-to-section"><a href="#welcome" class="menu-item">Home</a></li>
-                            <li class="scroll-to-section"><a href="#about" class="menu-item">About</a></li>
-                            <li class="scroll-to-section"><a href="#testimonials" class="menu-item">Testimonials</a>
-                            </li>
-                           
-                            <li class="scroll-to-section"><a href="#contact-us" class="menu-item">Contact Us</a></li>
-                            <li class="scroll-to-section"><a routerLink="/join-us" class="menu-item1">Join Us</a></li>
+                            <li class="scroll-to-section"><a role="button" [ngxScrollTo]="'#welcome'" class="menu-item">Home</a></li>
+                            <li class="scroll-to-section"><a role="button" [ngxScrollTo]="'#about'" class="menu-item">About</a></li>
+                            <li class="scroll-to-section"><a role="button" [ngxScrollTo]="'#testimonials'" class="menu-item">Testimonials</a>
+                            </li> 
+                            <li class="scroll-to-section"><a role="button" [ngxScrollTo]="'#contact-us'" class="menu-item">Contact Us</a></li>
+                            <li class="scroll-to-section"><a role="button" routerLink="/join-us" class="menu-item1">Join Us</a></li>
                         </ul>
                         <a class='menu-trigger'>
                             <span>Menu</span>

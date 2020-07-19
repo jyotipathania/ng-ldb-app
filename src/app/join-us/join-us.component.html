@@ -156,15 +156,9 @@
               <input 
                   type="text" 
                   class="form-control" 
-                  [ngClass]="{
-                    'is-invalid': joinusForm.get('address.inputAddress2').invalid &&
-                                  joinusForm.get('address.inputAddress2').touched,
-                      'is-valid': joinusForm.get('address.inputAddress2').valid &&
-                                  joinusForm.get('address.inputAddress2').touched                
-                  }"
                   id="inputAddress2" 
                   formControlName="inputAddress2" 
-                  placeholder="Apartment, studio, or floor">
+                  placeholder="Apartment, studio, or floor (Optional)">
               <div class="invalid-feedback" *ngIf="joinusForm.get('address.inputAddress2').errors?.required">
                 Input can't be empty.
               </div>
@@ -177,7 +171,6 @@
                     formControlName="inputCountry" 
                     [attr.disabled]="noEditable"
                     class="form-control"
-                    [(ngModel)] = "selectedCountry"  
                     (change)="changeCountryTrigger($event.target.selectedOptions[0].label)"
                     >                    
                   <option 
@@ -228,6 +221,7 @@
                                     (cities.length > 0)
                     }"
                     >
+                    <option [ngValue]="undefined" disabled="true" hidden [selected]="true">Please select city</option>
                   <option 
                       *ngFor="let city of cities" 
                       [ngValue]="city.city_name"
@@ -287,7 +281,15 @@
             </div>
             </div>
           
-            <button type="submit" class="btn btn-primary" >Submit</button>
+            <button 
+                type="submit" 
+                class="main-button mt-3" 
+                [ngClass]="{'disabled': !isFormSubmitCompleted}"
+                [disabled]="!isFormSubmitCompleted">
+              <span *ngIf="isFormSubmitCompleted">Submit</span>
+            <span *ngIf="!isFormSubmitCompleted"><span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+            Processing...</span>
+            </button>
           </form>
        
         </div>

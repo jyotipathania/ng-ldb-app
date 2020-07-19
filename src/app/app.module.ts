@@ -4,6 +4,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgxMaskModule, IConfig } from 'ngx-mask';
+import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 
 
 
@@ -46,6 +47,7 @@ import { TokenInterceptor, counrtyTokenProvider } from './shared/token-intercept
     FormsModule,
     ReactiveFormsModule,
     NgxMaskModule.forRoot(),
+    ScrollToModule.forRoot(),
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [counrtyTokenProvider],

@@ -11,7 +11,8 @@ import { SendMailServiceService } from '../services/send-mail-service.service';
 export class JoinUsComponent implements OnInit {
   @ViewChild('scrollToDiv')  myscrollToDiv: ElementRef; 
   isValidFormSubmitted:any = null;
-  selectedCountry:string = "PL";
+  isFormSubmitCompleted:boolean = true;
+  selectedCountry:string = "AD";
   selectedCity:string;
   selectedState:string;
   AllCountryList:any;
@@ -44,8 +45,8 @@ export class JoinUsComponent implements OnInit {
       userPeselorPassport: ["", Validators.required],
       address: this.fb.group({
         inputAddress: ["", Validators.required],
-        inputAddress2: ["", Validators.required],
-        inputCountry: ["", Validators.required],
+        inputAddress2: [""],
+        inputCountry: ["PL", Validators.required],
         inputState: ["", Validators.required],
         inputCity: ["", Validators.required],
         inputZip: ["", [
@@ -60,8 +61,7 @@ export class JoinUsComponent implements OnInit {
   }
 
   onSubmit(form: FormGroup) {
-    debugger;
-    this.isValidFormSubmitted = false;
+    
     if(form.invalid) {
       for (const key of Object.keys(form.controls)) {
         if (form.controls[key].invalid) {
@@ -72,20 +72,29 @@ export class JoinUsComponent implements OnInit {
   }
       return;
     }
-    this.myscrollToDiv.nativeElement.scrollIntoView();
+    this.isFormSubmitCompleted = false;
    
     
-    console.log("FirstName: ", form.value);
+   // console.log("FirstName: ", form.value);
     this.sendmailservice.sendEmail(form.value).
     subscribe(data => {
-      let msg = data['message']
-      this.isValidFormSubmitted = true;
+      //let msg = data['message']
+      this.myscrollToDiv.nativeElement.scrollIntoView();
+      this.isValidFormSubmitted = true
+      this.isFormSubmitCompleted = true;
       //alert(msg);
       // console.log(data, "success");
+      this.joinusForm.reset();
+      this.joinusForm.patchValue({
+        address: {
+          inputCountry: "PL",
+          inputState: undefined,
+          inputCity: undefined
+        }
+      }); 
     }, error => {
       console.error(error, "error");
-    } );
-    form.reset();
+    });
   }
 
   ngAfterViewInit() {

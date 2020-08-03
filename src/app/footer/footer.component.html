@@ -7,32 +7,99 @@
                     <!-- ***** Contact Form Start ***** -->
                     <div class="col-lg-6 col-md-12 col-sm-12">
                         <div class="contact-form">
-                            <form id="contact" action="" method="post">
+                            <!-- template-driven form 
+                                 Template-driven forms rely on directives defined in the FormsModule.
+                                 https://jasonwatmore.com/post/2018/11/10/angular-7-template-driven-forms-validation-example
+                            -->
+                            <h3>Contact Us</h3>
+                            <p class="small text-muted mb-4">For all enquires, please email us using the form below.</p>
+                            <div  *ngIf="isValidFormSubmitted" class="alert alert-success alert-dismissible fade show small" role="alert">
+                                <strong>👏 Congratulations!</strong> We have received your request will get back to you as soon as possible.
+                                <button type="button" class="close" (click)="isValidFormSubmitted = false" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                            <form id="contact" action="" method="post" #enquiryForm = "ngForm" (ngSubmit)="onSubmitEnquiryForm(enquiryForm)">
                                 <div class="row">
+                                    <div class="col-lg-12">
+                                        
+                                        <fieldset>
+                                            <select [(ngModel)]="model.inputRole" #inputRoleModel ="ngModel" 
+                                            class="form-control" 
+                                            [ngClass]="{
+                                                'is-invalid': inputRoleModel.invalid && enquiryForm.submitted,
+                                                  'is-valid': inputRoleModel.valid && enquiryForm.submitted
+                                              }"
+                                            name="inputRole" style="background-color: rgba(250,250,250,0.3);" id="inputRole" required>
+                    <option value="">How can we help you? Please select</option>
+                  <option *ngFor="let role of userRole" [value]="role">{{role}}</option>
+                </select>
+                <!-- <div class="invalid-feedback" *ngIf="inputRoleModel.invalid">
+                    Please select option.
+                  </div> -->
+                  <!-- {{inputRoleModel.errors | json}} -->
+                                        </fieldset>
+                                    </div>
                                     <div class="col-md-6 col-sm-12">
                                         <fieldset>
-                                            <input name="name" type="text" id="name" placeholder="Full Name" required=""
+                                            <input class="form-control"
+                                            [ngClass]="{
+                                                'is-invalid': inputNameModel.invalid && enquiryForm.submitted,
+                                                  'is-valid': inputNameModel.valid && enquiryForm.submitted 
+                                              }"
+                                            [(ngModel)]="model.inputName" name="inputName" type="text" id="inputName" placeholder="Full Name" required #inputNameModel="ngModel"
                                                 style="background-color: rgba(250,250,250,0.3);">
+                                                <!-- <div class="invalid-feedback" *ngIf="inputNameModel.invalid">
+                                                   <div  *ngIf="inputNameModel.errors.required">Input can't be empty.</div>
+                                                  </div> -->
                                         </fieldset>
+                                        <!-- {{inputNameModel.errors | json}} -->
                                     </div>
                                     <div class="col-md-6 col-sm-12">
                                         <fieldset>
-                                            <input name="email" type="text" id="email" placeholder="E-Mail Address"
-                                                required="" style="background-color: rgba(250,250,250,0.3);">
+                                            <input class="form-control"
+                                            [ngClass]="{
+                                                'is-invalid': inputEmailModel.invalid && enquiryForm.submitted,
+                                                  'is-valid': inputEmailModel.valid && enquiryForm.submitted 
+                                              }"
+                                            [(ngModel)]="model.inputEmail" name="inputEmail" [pattern]="emailPattern"  type="email" id="inputEmail" placeholder="E-Mail Address" #inputEmailModel="ngModel"
+                                                required style="background-color: rgba(250,250,250,0.3);">
+                                                <!-- <div class="invalid-feedback" *ngIf="inputEmailModel.invalid">
+                                                    <div *ngIf="inputEmailModel.errors.pattern">
+                                                        Invalid email.
+                                                      </div>
+                                                      <div *ngIf="inputEmailModel.errors.required">
+                                                        Input can't be empty.
+                                                      </div>
+
+                                                </div> -->
+                                                
+                                                  <!-- {{inputEmailModel.errors | json}} -->
                                         </fieldset>
                                     </div>
                                     <div class="col-lg-12">
                                         <fieldset>
-                                            <textarea name="message" rows="6" id="message" placeholder="Your Message"
-                                                required="" style="background-color: rgba(250,250,250,0.3);"></textarea>
-                                        </fieldset>
+                                            <textarea class="form-control"    
+                                            [ngClass]="{
+                                                'is-invalid': inputMessageModel.invalid && enquiryForm.submitted,
+                                                  'is-valid': inputMessageModel.valid && enquiryForm.submitted 
+                                              }"
+                                            [(ngModel)]="model.inputMessage" name="inputMessage" rows="6" id="inputMessage" placeholder="Your Message"  #inputMessageModel="ngModel"
+                                                required style="background-color: rgba(250,250,250,0.3);"></textarea>                                              
+                                                <!-- <div class="invalid-feedback" *ngIf="inputMessageModel.invalid">
+                                                    <div *ngIf="inputMessageModel.errors.required">Input can't be empty.</div>
+                                                  </div> -->
+                                                  <!-- {{inputMessageModel.errors | json}} -->
+                                            </fieldset>
+
                                     </div>
                                     <div class="col-lg-12">
                                         <fieldset>
-                                            <button type="submit" id="form-submit" class="main-button">Send Message
+                                            <button  type="submit" id="form-submit" class="main-button">Send Message
                                                 Now</button>
                                         </fieldset>
                                     </div>
+                                    <!-- {{model | json}} -->
                                 </div>
                             </form>
                         </div>

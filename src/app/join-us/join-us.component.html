@@ -41,9 +41,9 @@
         </div>
         <!-- End Title -->
 
-        <div  *ngIf="isValidFormSubmitted" class="alert alert-success alert-dismissible fade show" role="alert">
+        <div  *ngIf="isValidFormSubmitted" class="alert alert-success alert-dismissible fade show small" role="alert">
           <strong>👏 Congratulations!</strong> We have received your request will get back to you as soon as possible.
-          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <button type="button" class="close" (click)="isValidFormSubmitted = false" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>

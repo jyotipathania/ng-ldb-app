@@ -203,6 +203,10 @@ button.main-button {
 button.main-button:hover {
   background-color: #003d79;
 }
+.main-button:disabled,
+.main-button.disabled {
+  opacity: 0.65;
+}
 
 
 .center-heading {
@@ -846,7 +850,6 @@ promotion
 
 #promotion .right-text img {
   display: inline-block;
-  float: left;
   margin-right: 30px;
 }
 

@@ -23,14 +23,14 @@
 
 
 	// Scroll animation init
-	window.sr = new scrollReveal();
+	//window.sr = new scrollReveal();
 
 
 	
 
 
 	// Menu elevator animation
-	$('a[href*=\\#]:not([href=\\#])').on('click', function () {
+	/*$('a[href*=\\#]:not([href=\\#])').on('click', function () {
 		if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
 			var targetHash = this.hash;
 			var target = $(this.hash);
@@ -49,10 +49,10 @@
 				return false;
 			}
 		}
-	});
+	});*/
 
 	$(document).ready(function () {
-		$('a[href^="#welcome"]').addClass('active');
+	/*	$('a[href^="#welcome"]').addClass('active');
 
 		//smoothscroll
 		$('.menu-item').on('click', function (e) {
@@ -69,9 +69,9 @@
 				$('.menu-item').removeClass('active');
 				$(athis).addClass('active');
 			});
-		});
+		});*/
 
-		$(window).scroll(function (event) {
+	/*	$(window).scroll(function (event) {
 			var scrollPos = $(document).scrollTop() + 80;
 
 			if (scrollPos === 0) {
@@ -89,7 +89,7 @@
 					currLink.removeClass("active");
 				}
 			});
-		})
+		})*/
 	});
 
 	const Accordion = {
@@ -176,16 +176,16 @@
 
 
 	// Home number counterup
-	if ($('.count-item').length) {
+	/*if ($('.count-item').length) {
 		$('.count-item strong').counterUp({
 			delay: 10,
 			time: 1000
 		});
-	}
+	}*/
 
 
 	// Page loading animation
-	$(window).on('load', function () {
+/*	$(window).on('load', function () {
 		if ($('.cover').length) {
 			$('.cover').parallax({
 				imageSrc: $('.cover').data('image'),
@@ -200,7 +200,7 @@
 				$("#preloader").css("visibility", "hidden").fadeOut();
 			}, 300);
 		});
-	});
+	});*/
 
 
 	// Window Resize Mobile Menu Fix

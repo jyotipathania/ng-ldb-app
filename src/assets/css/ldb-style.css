@@ -877,7 +877,7 @@ testimonials
   margin-top: -200px;
 }
 
-#testimonials {
+#testimonials, #team {
   padding-top: 100px;
   position: relative;
   z-index: 9;
@@ -1022,7 +1022,8 @@ footer .right-content {
 }
 
 .contact-form input,
-.contact-form textarea {
+.contact-form textarea,
+.contact-form select {
   color: #777;
   font-size: 13px;
   border: 1px solid #eee;
@@ -1050,15 +1051,15 @@ footer .right-content {
 }
 
 .contact-form ::-webkit-input-placeholder { /* Edge */
-  color: #7a7a7a;
+  color: #999;
 }
 
 .contact-form :-ms-input-placeholder { /* Internet Explorer 10-11 */
-  color: #7a7a7a;
+  color: #999;
 }
 
 .contact-form ::placeholder {
-  color: #7a7a7a;
+  color: #999;
 }
 
 .footer-content .right-content {

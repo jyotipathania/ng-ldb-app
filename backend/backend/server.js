@@ -2,9 +2,9 @@ const nodemailer = require("nodemailer");
 const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
-const cors = require("cors");
+//const cors = require("cors");
 require('dotenv').config();
-app.use(cors());
+//app.use(cors());
 /*app.use(function (req, res, next) {
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
@@ -12,6 +12,11 @@ app.use(cors());
   res.setHeader('Access-Control-Allow-Credentials', true);
   next();
 });*/
+app.use(function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*"); // update to match the domain you will make the request from
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next();
+});
 
 app.use(bodyParser.json());
 
@@ -122,107 +127,6 @@ app.post('/sendFormData', (req, res) => {
       })
     }
   });
-
-});
-
-
-
-//Business Enquiry form
-app.post('/sendEnquiryFormData', (req, res) => {
-  debugger;
-console.log(req.body, 'data of form');
-var transporter = nodemailer.createTransport({
-  service: 'gmail',
-  host: 'smtp.gmail.com',
-  secure: 'true', //make it true in prod mode
-  port: '465',
-  auth: {
-    user: process.env.EMAIL_USER, // must be Gmail
-    pass: process.env.EMAIL_PASSWORD
-  }
-});
-
-var mailOptions = {
-  from: process.env.EMAIL_USER,
-  to: process.env.EMAIL_SEND_TO, // must be Gmail
-  bcc: process.env.EMAIL_BCC,
-  //cc:`${req.body.name} <${req.body.email}>`,
-  subject: 'LDB Business Enquiry Request',
-  html: `
-  <!DOCTYPE html>
-  <html style="margin: 0;padding: 0;">
-  <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LDB Business Enquiry Form</title>
-  </head>
-  <body style="background-color: #F4F4F4;margin: 0;padding: 0;font-size: 0;line-height: 0;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-      <center>    
-        <table class="container600" cellpadding="0" cellspacing="0" border="0" width="100%" style="width: calc(100%);max-width: calc(600px);margin: 0 auto;padding: 0;border-spacing: 0;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
-          <tr style="margin: 0;padding: 0;">
-            <td width="100%" style="text-align: left;margin: 0;padding: 0;border-collapse: collapse;">    
-                  <table width="100%" cellpadding="0" cellspacing="0" style="min-width: 100%;margin: 0;padding: 0;border-spacing: 0;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
-                    <tr style="margin: 0;padding: 0;">
-                      <td style="background-color: #0d5eaf;color: #000000;padding: 30px;text-align: center;margin: 0;border-collapse: collapse;">
-                      <h2 style="margin: 0;padding: 0;font-family: Arial;font-size: 24px;line-height: 28px; color: #ffffff;"><b>LDBPOLSKA</b></h2>
-                      </td>
-                    </tr>
-                  </table>
-                  <table width="100%" cellpadding="0" cellspacing="0" style="min-width: 100%;margin: 0;padding: 0;border-spacing: 0;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
-                    
-                    <tr style="margin: 0;padding: 0;">
-                      <td style="padding: 20px;background-color: #ffffff;margin: 0;border-collapse: collapse;">
-  
-                          <table class="smarttable" width="100%" cellpadding="0" cellspacing="0" style="min-width: 100%;margin: 0;padding: 0;border-spacing: 0;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
-                           
-                            <tbody style="margin: 0;padding: 0;">
-                              <tr style="margin: 0;padding: 0;">
-                                <td valign="top" style="text-align: left;padding: 5px;font-family: Arial,sans-serif;font-size: 12px;line-height: 20px;margin: 0;border-collapse: collapse;">User Role</td>
-                                <td data-label="First name" valign="top" style="padding: 5px;font-family: Arial,sans-serif;font-size: 12px;line-height: 20px;margin: 0;border-collapse: collapse;">${req.body.inputRole}</td>
-                              </tr>  
-                              <tr style="margin: 0;padding: 0;">
-                                <td valign="top" style="text-align: left;padding: 5px;font-family: Arial,sans-serif;font-size: 12px;line-height: 20px;margin: 0;border-collapse: collapse;">Name</td>
-                                <td data-label="Last name" valign="top" style="padding: 5px;font-family: Arial,sans-serif;font-size: 12px;line-height: 20px;margin: 0;border-collapse: collapse;">${req.body.inputName}</td>
-                                </tr>  
-                                <tr style="margin: 0;padding: 0;">
-                                <td valign="top" style="text-align: left;padding: 5px;font-family: Arial,sans-serif;font-size: 12px;line-height: 20px;margin: 0;border-collapse: collapse;">Email</td>
-                                <td data-label="Email" valign="top" style="padding: 5px;font-family: Arial,sans-serif;font-size: 12px;line-height: 20px;margin: 0;border-collapse: collapse;">${req.body.inputEmail}</td>
-                              </tr>
-                              <tr style="margin: 0;padding: 0;">
-                              <td valign="top" style="text-align: left;padding: 5px;font-family: Arial,sans-serif;font-size: 12px;line-height: 20px;margin: 0;border-collapse: collapse;">Message.</td>
-                                <td data-label="Message" valign="top" style="padding: 5px;font-family: Arial,sans-serif;font-size: 12px;line-height: 20px;margin: 0;border-collapse: collapse;">${req.body.inputMessage}</td>
-                                </tr>   
-                                
-                  
-                             
-                            </tbody>
-                          </table>
-  
-                      </td>
-                    </tr>
-                  </table>
-                 
-                </td>
-          </tr>
-      </table>
-  
-   
-      </center>
-  </body>
-  </html>
-        `
-};
-
-transporter.sendMail(mailOptions, (error, info) => {
-  if (error) {
-    console.log(error);
-  } else {
-    console.log('Email sent: ' + info.response);
-    res.status(200).json({
-      message: 'successfuly sent!'
-    })
-  }
-});
 
 });
 

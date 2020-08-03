@@ -5,6 +5,7 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgxMaskModule, IConfig } from 'ngx-mask';
 import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
+import { NgxTypedJsModule } from 'ngx-typed-js';
 
 
 
@@ -16,6 +17,7 @@ import { FeatureOneComponent } from './feature-one/feature-one.component';
 import { FeatureTwoComponent } from './feature-two/feature-two.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
 import { FooterComponent } from './footer/footer.component';
+import { TeamComponent } from './team/team.component'
 
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { ServiceWorkerModule } from '@angular/service-worker';
@@ -36,12 +38,14 @@ import { TokenInterceptor, counrtyTokenProvider } from './shared/token-intercept
     FooterComponent,
     JoinUsComponent,
     HomepageComponent,
+    TeamComponent,
     PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     CarouselModule,
+    NgxTypedJsModule,
     BrowserAnimationsModule,
     HttpClientModule,
     FormsModule,

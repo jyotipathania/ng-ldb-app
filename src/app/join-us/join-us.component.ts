@@ -63,11 +63,28 @@ export class JoinUsComponent implements OnInit {
   onSubmit(form: FormGroup) {
     
     if(form.invalid) {
+      debugger;
+      
       for (const key of Object.keys(form.controls)) {
         if (form.controls[key].invalid) {
-          const invalidControl = this.el.nativeElement.querySelector('[formcontrolname="' + key + '"]');
-          invalidControl.focus();
-          break;
+          if(typeof form.controls[key].controls === "object"){
+            for (const subkey of Object.keys(form.controls[key].controls)) {
+              console.log(subkey)
+              if (form.controls[key].controls[subkey].invalid) {
+                let invalidControl = this.el.nativeElement.querySelector('[formcontrolname="' + subkey + '"]');
+                invalidControl.focus();
+                break;
+              }
+              
+            }
+            break;
+          } else {
+            let invalidControl = this.el.nativeElement.querySelector('[formcontrolname="' + key + '"]');
+            invalidControl.focus();
+            break;
+          }
+          
+         
        }
   }
       return;

@@ -67,10 +67,10 @@ export class JoinUsComponent implements OnInit {
       
       for (const key of Object.keys(form.controls)) {
         if (form.controls[key].invalid) {
-          if(typeof form.controls[key].controls === "object"){
-            for (const subkey of Object.keys(form.controls[key].controls)) {
+          if(typeof form.controls[key]['controls'] === "object"){
+            for (const subkey of Object.keys(form.controls[key]['controls'])) {
               console.log(subkey)
-              if (form.controls[key].controls[subkey].invalid) {
+              if (form.controls[key]['controls'][subkey].invalid) {
                 let invalidControl = this.el.nativeElement.querySelector('[formcontrolname="' + subkey + '"]');
                 invalidControl.focus();
                 break;

@@ -24,7 +24,7 @@ app.post('/sendFormData', (req, res) => {
   var transporter = nodemailer.createTransport({
     service: 'gmail',
     host: 'smtp.gmail.com',
-    secure: 'true',
+    secure: 'false',
     port: '465',
     auth: {
       user: process.env.EMAIL_USER, // must be Gmail
@@ -134,7 +134,7 @@ console.log(req.body, 'data of form');
 var transporter = nodemailer.createTransport({
   service: 'gmail',
   host: 'smtp.gmail.com',
-  secure: 'true', //make it true in prod mode
+  secure: 'false', //make it true in prod mode
   port: '465',
   auth: {
     user: process.env.EMAIL_USER, // must be Gmail

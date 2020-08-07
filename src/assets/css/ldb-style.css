@@ -687,7 +687,7 @@ welcome
 
 .welcome-area .header-text h1 {
   font-weight: 900;
-  font-size: 52px;
+  font-size: 46px;
   line-height: 80px;
   letter-spacing: 1px;
   margin-bottom: 30px;
@@ -877,7 +877,7 @@ testimonials
   margin-top: -200px;
 }
 
-#testimonials, #team {
+#testimonials, #team, #services {
   padding-top: 100px;
   position: relative;
   z-index: 9;

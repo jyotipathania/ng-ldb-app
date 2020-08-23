@@ -1,0 +1,34 @@
+.localization-links {
+    a {
+        &:after {
+            content: '|';
+            display: inline-block;
+            margin: 0 5px;
+            color: #333;
+            opacity: 0.5;
+        }
+        &:last-child::after {
+            display: none;
+        }    
+    }
+    
+}
+
+@media (max-width: 991px) {
+    .localization-links {
+    background-color: #f7f7f7!important;
+    a {
+        background-color: #f7f7f7!important;
+    }
+
+    &:hover {
+        background-color: #eee!important;
+        a {
+            background-color: #eee!important;
+        }
+    }
+}
+.nav {
+    padding: 0!important;
+}
+}

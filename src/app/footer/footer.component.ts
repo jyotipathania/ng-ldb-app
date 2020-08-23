@@ -10,7 +10,7 @@ import { NgForm } from '@angular/forms';
 })
 export class FooterComponent implements OnInit {
   isValidFormSubmitted = false;
-  userRole = ["I'm a dealer looking for dealership","I'm a investor looking invest in Real estate","I'm a agency looking for promotion","Others"];
+  userRole = ["I am interested for Partnership","I am Interested for IT Services","I am Looking for information","Other"];
   model:Contact = {
     inputRole: '',
     inputName: '',

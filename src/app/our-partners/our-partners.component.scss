@@ -1,0 +1,29 @@
+.neuromorph-card {
+    box-shadow: 12px 12px 24px 0 rgba(0, 0, 0, 0.2),
+    -12px -12px 24px 0 rgba(255, 255, 255, 0.5);
+  font-size: 5rem;
+  border-radius: 40px;
+  max-width: 250px;
+  overflow: hidden;
+  padding: 1.3rem;
+  display: flex;
+  transition: opacity 0.3;
+  background-color: #fff;
+
+  img {
+      opacity: 0.6;
+  }
+  
+  &:hover,&:focus {
+        box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2),
+          inset -6px -6px 10px 0 rgba(255, 255, 255, 0.5);       
+          
+          img {
+            opacity: 1;
+        }
+  }
+
+ 
+
+}
+

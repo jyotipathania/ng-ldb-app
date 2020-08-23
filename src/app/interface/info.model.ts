@@ -11,5 +11,11 @@ export interface Iinfo {
         inputCity: string;
         inputZip: string;
         inputPhone: string;
-    }
+    },
+    isStudent: string,
+    ageCheck: string,
+    isAlreadyEmployed: string,
+    contractType: string,
+    isWageAboveThreshold: string,
+    netWage: string
   }

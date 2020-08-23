@@ -17,7 +17,7 @@
   
       <ul class="navbar-nav ml-auto">        
         <li class="nav-item">
-          <a class="nav-link" routerLink="/">Go back</a>
+          <a class="nav-link" routerLink="/" i18n="@@JoinUsLinkGoBack">Go back</a>
         </li>
       </ul>
      
@@ -31,18 +31,17 @@
 <div class="row">
     
     <!-- ***** Contact Form Start ***** -->
-    <div class="col-sm-12">
+    <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 col-sm-12">
 <div class="contact-form">
     <div class="container space-2 space-lg-3">
         <!-- Title -->
         <div #scrollToDiv class="w-md-80 w-lg-50 text-center mx-md-auto mb-5 mb-md-9">
-          <h2>Tell us about yourself</h2>
-          <p>Whether you have questions or you would just like to say hello, contact us.</p>
+          <h2 i18n="@@JoinUsHeading">Tell us about yourself</h2>
         </div>
         <!-- End Title -->
 
         <div  *ngIf="isValidFormSubmitted" class="alert alert-success alert-dismissible fade show small" role="alert">
-          <strong>👏 Congratulations!</strong> We have received your request will get back to you as soon as possible.
+          <strong>👏&nbsp;<ng-container i18n @@JoinUsSuccessText1>Congratulations!</ng-container></strong>&nbsp; <ng-container i18n @@JoinUsSuccessText2>We have received your request will get back to you as soon as possible.</ng-container>
           <button type="button" class="close" (click)="isValidFormSubmitted = false" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
@@ -53,7 +52,7 @@
           <form  [formGroup]="joinusForm" (ngSubmit)="onSubmit(joinusForm)">
             <div class="form-row">
                 <div class="form-group col-md-6">
-                  <label for="firstName">First Name</label>
+                  <label for="firstName" i18n="@@JoinFormFirstName">First Name</label>
                   <input 
                     type="text" 
                     class="form-control" 
@@ -66,12 +65,12 @@
                     id="firstName" 
                     formControlName="firstName" 
                     placeholder="First Name">
-                  <div class="invalid-feedback" *ngIf="joinusForm.get('firstName').errors?.required">
+                  <div class="invalid-feedback" i18n="@@JoinFormFirstNameError" *ngIf="joinusForm.get('firstName').errors?.required">
                     Input can't be empty.
                   </div>
                 </div>
                 <div class="form-group col-md-6">
-                  <label for="lastName">Last Name</label>
+                  <label for="lastName" i18n="@@JoinFormLastName">Last Name</label>
                   <input 
                     type="text" 
                     class="form-control" 
@@ -84,14 +83,14 @@
                     id="lastName" 
                     formControlName="lastName" 
                     placeholder="Last Name">
-                  <div class="invalid-feedback" *ngIf="joinusForm.get('lastName').errors?.required">
+                  <div class="invalid-feedback" i18n="@@JoinFormLastNameError" *ngIf="joinusForm.get('lastName').errors?.required">
                     Input can't be empty.
                   </div>
                 </div>
               </div>
             <div class="form-row">
               <div class="form-group col-md-6">
-                <label for="userEmail">Email</label>
+                <label for="userEmail" i18n="@@JoinFormEmail">Email</label>
                 <input 
                   type="email" 
                   class="form-control" 
@@ -104,16 +103,16 @@
                   id="userEmail" 
                   formControlName="userEmail" 
                   placeholder="Email">
-                <div class="invalid-feedback" *ngIf="joinusForm.get('userEmail').errors?.required">
+                <div class="invalid-feedback" i18n="@@JoinFormEmailEmptyError" *ngIf="joinusForm.get('userEmail').errors?.required">
                   Input can't be empty.
                 </div>
-                <div class="invalid-feedback" *ngIf="joinusForm.get('userEmail').errors?.pattern">
+                <div class="invalid-feedback" i18n="@@JoinFormEmailInvalidError" *ngIf="joinusForm.get('userEmail').errors?.pattern">
                   Invalid Email id.
                 </div>
               </div>       
               
               <div class="form-group col-md-6">
-                <label for="userPeselorPassport">Pessel/Passport Id</label>
+                <label for="userPeselorPassport" i18n="@@JoinFormPessel">Pessel/Passport Number</label>
                 <input 
                     type="text" 
                     class="form-control" 
@@ -126,7 +125,7 @@
                     id="userPeselorPassport" 
                     formControlName="userPeselorPassport" 
                     placeholder="Pessel/Passport Id">
-                <div class="invalid-feedback" *ngIf="joinusForm.get('userPeselorPassport').errors?.required">
+                <div class="invalid-feedback" i18n="@@JoinFormPesselError" *ngIf="joinusForm.get('userPeselorPassport').errors?.required">
                   Input can't be empty.
                 </div>
               </div> 
@@ -145,27 +144,28 @@
                                   joinusForm.get('address.inputAddress').touched         
                   }"
                   id="inputAddress" 
+                  i18n="@@JoinFormAddress1"
                   formControlName="inputAddress" 
                   placeholder="1234 Main St">
-              <div class="invalid-feedback" *ngIf="joinusForm.get('address.inputAddress').errors?.required">
+              <div class="invalid-feedback" i18n="@@JoinFormAddressError" *ngIf="joinusForm.get('address.inputAddress').errors?.required">
                 Input can't be empty.
               </div>
             </div>
             <div class="form-group">
-              <label for="inputAddress2">Address 2</label>
+              <label for="inputAddress2" i18n="@@JoinFormAddress2">Address 2</label>
               <input 
                   type="text" 
                   class="form-control" 
                   id="inputAddress2" 
                   formControlName="inputAddress2" 
                   placeholder="Apartment, studio, or floor (Optional)">
-              <div class="invalid-feedback" *ngIf="joinusForm.get('address.inputAddress2').errors?.required">
+              <div class="invalid-feedback" i18n="@@JoinFormAddress2Error" *ngIf="joinusForm.get('address.inputAddress2').errors?.required">
                 Input can't be empty.
               </div>
             </div>
             <div class="form-row">
               <div class="form-group col-md-4">
-                <label for="inputCountry">Select Country</label>
+                <label for="inputCountry" i18n="@@JoinFormCountry">Select Country</label>
                 <select 
                     id="inputCountry" 
                     formControlName="inputCountry" 
@@ -181,7 +181,7 @@
               </div>              
              
               <div class="form-group col-md-4">
-                <label for="inputState">State</label>
+                <label for="inputState" i18n="@@JoinFormState">State</label>
                 <select 
                     id="inputState" 
                     formControlName="inputState" 
@@ -201,12 +201,12 @@
                       [ngValue]="state.state_name"
                       >{{state.state_name}}</option>
                 </select>
-                <div class="invalid-feedback" *ngIf="joinusForm.get('address.inputState').errors?.required">
+                <div class="invalid-feedback" i18n="@@JoinFormStateError" *ngIf="joinusForm.get('address.inputState').errors?.required">
                   Please select a valid state.
                 </div>
               </div>
               <div class="form-group col-md-4" *ngIf="!isCitiesDataFetched">
-                <label for="inputCity">City </label>
+                <label for="inputCity" i18n="@@JoinFormCity">City </label>
                 <select 
                     id="inputCity" 
                     formControlName="inputCity" 
@@ -227,12 +227,12 @@
                       [ngValue]="city.city_name"
                       >{{city.city_name}}</option>
                 </select>
-                <div class="invalid-feedback"  *ngIf="joinusForm.get('address.inputCity').errors?.required">
+                <div class="invalid-feedback" i18n="@@JoinFormCityError"  *ngIf="joinusForm.get('address.inputCity').errors?.required">
                   Please select a valid city.
                 </div>
               </div>
               <div class="form-group col-md-4">
-                <label for="inputZip">Zip</label>
+                <label for="inputZip" i18n="@@JoinFormZip">Zip</label>
                 <input 
                     type="text" 
                     formControlName="inputZip" 
@@ -248,15 +248,15 @@
                     [validation]="true"
                     placeholder="Zipcode"
                     >
-                <div class="invalid-feedback" *ngIf="joinusForm.get('address.inputZip').errors?.required">
+                <div class="invalid-feedback" i18n="@@JoinFormZipEmptyError" *ngIf="joinusForm.get('address.inputZip').errors?.required">
                   Input can't be empty.
                 </div>
-                <div class="invalid-feedback" *ngIf="joinusForm.get('address.inputZip').errors?.pattern">
+                <div class="invalid-feedback" i18n="@@JoinFormZipInvalidError" *ngIf="joinusForm.get('address.inputZip').errors?.pattern">
                   Invalid zipcode.
                 </div>
               </div>
               <div class="form-group col-md-4">
-                <label for="inputPhone">Phone</label>
+                <label for="inputPhone" i18n="@@JoinFormPhone">Phone</label>
                 <input 
                     type="text" 
                     class="form-control" 
@@ -271,24 +271,167 @@
                     prefix="+48 " mask="00 000 00 00"
                     [validation]="true"
                     placeholder="eg: 54 545 54 54">
-                <div class="invalid-feedback" *ngIf="joinusForm.get('address.inputPhone').errors?.required">
+                <div class="invalid-feedback" i18n="@@JoinFormPhoneEmptyError" *ngIf="joinusForm.get('address.inputPhone').errors?.required">
                   Input can't be empty.
                 </div>
-                <div class="invalid-feedback" *ngIf="!joinusForm.get('address.inputPhone').valid && !joinusForm.get('address.inputPhone').errors?.required">
+                <div class="invalid-feedback" i18n="@@JoinFormPhoneInvalidError" *ngIf="!joinusForm.get('address.inputPhone').valid && !joinusForm.get('address.inputPhone').errors?.required">
                   Invalid phone number.
                 </div>
+              </div>              
+            </div>
+            </div>
+            <div class="w-100"></div>
+            <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="ageCheck" i18n="@@JoinFormIsStudent" class="d-block">Are you Student?</label>
+             
+              <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" 
+                       id="isStudent1" 
+                       value="Yes"
+                       name="isStudent"
+                       formControlName="isStudent" 
+                       class="custom-control-input">
+                <label class="custom-control-label" for="isStudent1" i18n="@@JoinFormIsStudentYes">Yes</label>
+              </div>
+              <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" 
+                       id="isStudent2" 
+                       value="No"
+                       name="isStudent"
+                       formControlName="isStudent" 
+                       class="custom-control-input">
+                <label class="custom-control-label" for="isStudent2" i18n="@@JoinFormIsStudentNo">No</label>
+              </div>
+              
+            </div>
+
+            <div class="form-group col-md-6">
+              <label for="ageCheck" i18n="@@JoinFormAgeCheck" class="d-block">Are you less than 26 year old?</label>
+              <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" 
+                       id="ageCheck1" 
+                       value="Yes"
+                       name="ageCheck"
+                       formControlName="ageCheck" 
+                       class="custom-control-input">
+                <label class="custom-control-label" for="ageCheck1" i18n="@@JoinFormAgeCheckYes">Yes</label>
+              </div>
+              <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" 
+                       id="ageCheck2" 
+                       value="No"
+                       name="ageCheck"
+                       formControlName="ageCheck" 
+                       class="custom-control-input">
+                <label class="custom-control-label" for="ageCheck2" i18n="@@JoinFormAgeCheckNo">No</label>
               </div>
             </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="ageCheck" i18n="@@JoinFormIsAlreadyEmployed" class="d-block">Are you working somewhere?</label>
+             
+              <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" 
+                       id="isAlreadyEmployed1" 
+                       value="Yes"
+                       name="isAlreadyEmployed"
+                       formControlName="isAlreadyEmployed" 
+                       (change)="handleEmploymentStatus($event)"
+                       class="custom-control-input">
+                <label class="custom-control-label" for="isAlreadyEmployed1" i18n="@@JoinFormIsAlreadyEmployedYes">Yes</label>
+              </div>
+              <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" 
+                       id="isAlreadyEmployed2" 
+                       value="No"
+                       name="isAlreadyEmployed"
+                       formControlName="isAlreadyEmployed" 
+                       class="custom-control-input"
+                       (change)="handleEmploymentStatus($event)"
+                       >
+                <label class="custom-control-label" for="isAlreadyEmployed2" i18n="@@JoinFormIsAlreadyEmployedNo">No</label>
+              </div>
+              
             </div>
-          
+            <div *ngIf="isAlreadyEmployed" class="form-group col-md-6">
+              <label for="inputCountry" i18n="@@JoinFormContractType">Please choose the contract</label>
+              <select 
+                  id="contractType" 
+                  formControlName="contractType" 
+                  class="form-control"
+                  [(ngModel)]="selectedContract"
+                  >               
+                  <option [ngValue]="undefined" disabled="true" hidden [selected]="true">Please select contract</option>     
+                <option 
+                    *ngFor = "let contract of contractListItems" 
+                    [ngValue]="contract"
+                    i18n
+                    >{contract, select, Contract of employment {Contract of employment} Contract work {Contract work} Contract of mandate {Contract of mandate}}</option>
+              </select>
+              <!-- https://stackoverflow.com/questions/60718283/angular-i18n-how-to-translate-select-options -->
+            </div> 
+          </div>
+
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="ageCheck" i18n="@@JoinFormIsWageAboveThreshold" class="d-block">Are you earning more than minimum Wage 2600 PLN?</label>
+             
+              <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" 
+                       id="isWageAboveThreshold1" 
+                       value="Yes"
+                       name="isWageAboveThreshold"
+                       formControlName="isWageAboveThreshold" 
+                       (change)="handleWageStatus($event)"
+                       class="custom-control-input">
+                <label class="custom-control-label" for="isWageAboveThreshold1" i18n="@@JoinFormIsWageAboveThresholdYes">Yes</label>
+              </div>
+              <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" 
+                       id="isWageAboveThreshold2" 
+                       value="No"
+                       name="isWageAboveThreshold"
+                       formControlName="isWageAboveThreshold" 
+                       class="custom-control-input"
+                       (change)="handleWageStatus($event)"
+                       >
+                <label class="custom-control-label" for="isWageAboveThreshold2" i18n="@@JoinFormIsWageAboveThresholdNo">No</label>
+              </div>
+              
+            </div>
+            <div *ngIf="isNetWageActive" class="form-group col-md-6">
+              <label for="netWage" i18n="@@JoinFormNetWage">Please mention amount in Gross</label>
+              <input 
+                    type="text" 
+                    class="form-control" 
+                    [ngClass]="{
+                      'is-invalid': joinusForm.get('netWage').invalid &&
+                                    joinusForm.get('netWage').touched,
+                        'is-valid': joinusForm.get('netWage').valid &&
+                                    joinusForm.get('netWage').touched         
+                    }"
+                    id="netWage" 
+                    formControlName="netWage" 
+                    prefix="zł " mask="separator.2" thousandSeparator=","
+                    [validation]="true"
+                    placeholder="eg: 3000">
+                <div class="invalid-feedback" i18n="@@JoinFormNetWageEmptyError" *ngIf="joinusForm.get('netWage').errors?.required">
+                  Input can't be empty.
+                </div>
+                
+
+            </div> 
+          </div>
             <button 
                 type="submit" 
                 class="main-button mt-3" 
                 [ngClass]="{'disabled': !isFormSubmitCompleted}"
                 [disabled]="!isFormSubmitCompleted">
-              <span *ngIf="isFormSubmitCompleted">Submit</span>
-            <span *ngIf="!isFormSubmitCompleted"><span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
-            Processing...</span>
+              <span *ngIf="isFormSubmitCompleted" i18n="@@JoinFormSubmit">Submit</span>
+            <span *ngIf="!isFormSubmitCompleted"><span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>&nbsp;
+            <ng-container i18n @@JoinFormProcessing>Processing...</ng-container></span>
             </button>
           </form>
        

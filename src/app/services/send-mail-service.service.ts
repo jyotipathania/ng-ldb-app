@@ -10,8 +10,8 @@ import { Contact } from '../interface/contact.model';
 export class SendMailServiceService {
 
   constructor(private http: HttpClient) { }
-  //url = 'http://ldbbackend-env.eba-tgrfb2an.eu-central-1.elasticbeanstalk.com'
-  url = "http://localhost:3000"
+  url = 'http://ldbbackend-env.eba-tgrfb2an.eu-central-1.elasticbeanstalk.com'
+  //url = "http://localhost:3000"
   sendEmail(obj): Observable<Iinfo> {
     return this.http.post<Iinfo>(this.url + '/sendFormData', obj);
   }

@@ -8,7 +8,10 @@ import * as $ from 'jquery';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-
+  localesList = [
+    { code: "en-US", label: "EN"},
+    { code: "pl", label: "PL"}
+  ]
   constructor() { }
 
   ngOnInit(): void {

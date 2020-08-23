@@ -4,16 +4,16 @@
             <div class="footer-content">
                 <div class="row">
                     <!-- ***** Contact Form Start ***** -->
-                    <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="col-lg-6 offset-lg-3 col-md-12 col-sm-12">
                         <div class="contact-form">
                             <!-- template-driven form 
                                  Template-driven forms rely on directives defined in the FormsModule.
                                  https://jasonwatmore.com/post/2018/11/10/angular-7-template-driven-forms-validation-example
                             -->
-                            <h3>Contact Us</h3>
-                            <p class="small text-muted mb-4">For all enquires, please email us using the form below.</p>
+                            <h3 i18n="@@FooterFormTagLineMain">Contact Us</h3>
+                            <p class="small text-muted mb-4" i18n="@@FooterFormTagLinePara">For any inquiries, please email us using the form below.</p>
                             <div  *ngIf="isValidFormSubmitted" class="alert alert-success alert-dismissible fade show small" role="alert">
-                                <strong>👏 Congratulations!</strong> We have received your request will get back to you as soon as possible.
+                                <strong>👏 <ng-container i18n @@FooterFormSuccess>Congratulations!</ng-container>&nbsp;</strong> <ng-container i18n @@FooterFormSuccessMsg>We have received your request will get back to you as soon as possible.</ng-container>
                                 <button type="button" class="close" (click)="isValidFormSubmitted = false" aria-label="Close">
                                   <span aria-hidden="true">&times;</span>
                                 </button>
@@ -30,8 +30,8 @@
                                                   'is-valid': inputRoleModel.valid && enquiryForm.submitted
                                               }"
                                             name="inputRole" style="background-color: rgba(250,250,250,0.3);" id="inputRole" required>
-                    <option value="">How can we help you? Please select</option>
-                  <option *ngFor="let role of userRole" [value]="role">{{role}}</option>
+                    <option value="" i18n="@@FooterFormUserRoleDefault">How can we help you? Please select</option>
+                  <option *ngFor="let role of userRole" [value]="role" i18n>{role, select, I am interested for Partnership {I am interested for Partnership} I am Interested for IT Services {I am Interested for IT Services} I am Looking for information {I am Looking for information} Other {Other}}</option>
                 </select>
                 <!-- <div class="invalid-feedback" *ngIf="inputRoleModel.invalid">
                     Please select option.
@@ -46,7 +46,7 @@
                                                 'is-invalid': inputNameModel.invalid && enquiryForm.submitted,
                                                   'is-valid': inputNameModel.valid && enquiryForm.submitted 
                                               }"
-                                            [(ngModel)]="model.inputName" name="inputName" type="text" id="inputName" placeholder="Full Name" required #inputNameModel="ngModel"
+                                            [(ngModel)]="model.inputName" name="inputName" type="text" id="inputName" placeholder="Full Name" required #inputNameModel="ngModel" i18n-placeholder
                                                 style="background-color: rgba(250,250,250,0.3);">
                                                 <!-- <div class="invalid-feedback" *ngIf="inputNameModel.invalid">
                                                    <div  *ngIf="inputNameModel.errors.required">Input can't be empty.</div>
@@ -61,7 +61,7 @@
                                                 'is-invalid': inputEmailModel.invalid && enquiryForm.submitted,
                                                   'is-valid': inputEmailModel.valid && enquiryForm.submitted 
                                               }"
-                                            [(ngModel)]="model.inputEmail" name="inputEmail" [pattern]="emailPattern"  type="email" id="inputEmail" placeholder="E-Mail Address" #inputEmailModel="ngModel"
+                                            [(ngModel)]="model.inputEmail" name="inputEmail" [pattern]="emailPattern"  type="email" id="inputEmail" placeholder="E-Mail Address" #inputEmailModel="ngModel" i18n-placeholder
                                                 required style="background-color: rgba(250,250,250,0.3);">
                                                 <!-- <div class="invalid-feedback" *ngIf="inputEmailModel.invalid">
                                                     <div *ngIf="inputEmailModel.errors.pattern">
@@ -83,7 +83,7 @@
                                                 'is-invalid': inputMessageModel.invalid && enquiryForm.submitted,
                                                   'is-valid': inputMessageModel.valid && enquiryForm.submitted 
                                               }"
-                                            [(ngModel)]="model.inputMessage" name="inputMessage" rows="6" id="inputMessage" placeholder="Your Message"  #inputMessageModel="ngModel"
+                                            [(ngModel)]="model.inputMessage" name="inputMessage" rows="6" id="inputMessage" placeholder="Your Message"  #inputMessageModel="ngModel" i18n-placeholder
                                                 required style="background-color: rgba(250,250,250,0.3);"></textarea>                                              
                                                 <!-- <div class="invalid-feedback" *ngIf="inputMessageModel.invalid">
                                                     <div *ngIf="inputMessageModel.errors.required">Input can't be empty.</div>
@@ -94,7 +94,7 @@
                                     </div>
                                     <div class="col-lg-12">
                                         <fieldset>
-                                            <button  type="submit" id="form-submit" class="main-button">Send Message
+                                            <button  type="submit" id="form-submit" class="main-button" i18n="@@FooterFormSubmitText">Send Message
                                                 Now</button>
                                         </fieldset>
                                     </div>
@@ -103,15 +103,22 @@
                             </form>
                         </div>
                     </div>
+                    <div class="col-sm-12">                      
+                        <ul class="address-info list-inline text-center">
+                            <li class="list-inline-item">
+                                <i class="las la-map-marker"></i> LDB Sp.z o. o, Ul. Bema 40C, 87-100 Torun, Poland <br>
+                                NIP - 956-235-85-27  |  Regon - 385340246  |  KRS - 0000824291
+                            </li>
+                            
+                            
+                        </ul>
+                        
+
+
+                    </div>
                     <!-- ***** Contact Form End ***** -->
-                    <div class="right-content col-lg-6 col-md-12 col-sm-12">
-                        <h2>More About <em>LDBPolska</em></h2>
-                        <p>Phasellus dapibus urna vel lacus accumsan, iaculis eleifend leo auctor. Duis at finibus odio.
-                            Vivamus ut pharetra arcu, in porta metus. Suspendisse blandit pulvinar ligula ut elementum.
-                            <br><br>If you need this contact form to send email to your inbox, you may follow our <a
-                                rel="nofollow" href="https://ldbpolska.com/contact" target="_parent">contact</a> page
-                            for more detail.</p>
-                        <ul class="social">
+                    <div class="col-sm-12">                       
+                        <ul class="social w-100 text-center">
                             <li><a href="https://fb.com/ldbpolska"><i class="lab la-facebook-f"></i></a></li>
                             <li><a href="#"><i class="lab la-twitter"></i></a></li>
                             <li><a href="#"><i class="lab la-linkedin-in"></i></a></li>
@@ -122,9 +129,9 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="sub-footer">
-                        <p>Copyright &copy; 2020 LDBPolska
+                        <p><ng-container i18n @@FooterCopyText>Copyright</ng-container>&copy; 2020 LDBPolska
 
-                        | Designed by <a rel="nofollow" href="#">Jyoti Pathania</a></p>
+                        | <ng-container i18n @@FooterMadeBy>Designed by</ng-container>&nbsp;<a rel="nofollow" href="#">Jyoti Pathania</a></p>
                     </div>
                 </div>
             </div>

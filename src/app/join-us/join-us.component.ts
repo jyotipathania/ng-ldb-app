@@ -22,8 +22,13 @@ export class JoinUsComponent implements OnInit {
   cityDefault:any;
   noEditable: boolean = true;
   isCitiesDataFetched: boolean = true;
+  isAlreadyEmployed: boolean = true;
+  isNetWageActive: boolean = true;
+  contractListItems :any = ["Contract of employment", "Contract work", "Contract of mandate"];
+  selectedContract:string;
   //Reactive form init
   //https://www.concretepage.com/angular-2/angular-2-4-email-validation-example
+  //https://stackoverflow.com/questions/49371955/angular-4-reactive-forms-toggle-validation-for-hidden-form-elements
   joinusForm: FormGroup;
 
   constructor(
@@ -55,7 +60,15 @@ export class JoinUsComponent implements OnInit {
                       ]
                   ],
         inputPhone:["", Validators.required]
-      })
+      }),
+      isStudent: ["Yes"],
+      ageCheck: ["Yes"],
+      isAlreadyEmployed: ["Yes"],
+      contractType: ["", Validators.required],
+      isWageAboveThreshold: ["Yes"],
+      netWage:["", [
+        Validators.required
+      ]]
       
     })
   }
@@ -91,10 +104,12 @@ export class JoinUsComponent implements OnInit {
     }
     this.isFormSubmitCompleted = false;
    
-    
+
    // console.log("FirstName: ", form.value);
     this.sendmailservice.sendEmail(form.value).
+    
     subscribe(data => {
+      debugger;
       //let msg = data['message']
       this.myscrollToDiv.nativeElement.scrollIntoView();
       this.isValidFormSubmitted = true
@@ -107,12 +122,48 @@ export class JoinUsComponent implements OnInit {
           inputCountry: "PL",
           inputState: undefined,
           inputCity: undefined
-        }
-      }); 
+        },
+        netWage: "",
+        contractType: undefined,
+        isStudent: "Yes",
+      ageCheck: "Yes",
+      isAlreadyEmployed: "Yes",
+      isWageAboveThreshold: "Yes"
+
+      });
+      this.isAlreadyEmployed = true;
+      this.isNetWageActive = true; 
     }, error => {
       console.error(error, "error");
     });
   }
+
+
+
+ handleEmploymentStatus(e) {
+    if(e.target.value === "Yes") {
+      this.isAlreadyEmployed = true;
+      this.joinusForm.get('contractType').enable();
+    } else {
+      this.isAlreadyEmployed = false;
+      this.joinusForm.patchValue({
+        contractType: undefined
+      });
+      this.joinusForm.get('contractType').disable();
+    }
+ }
+ handleWageStatus(e) {
+  if(e.target.value === "Yes") {
+    this.isNetWageActive = true;
+    this.joinusForm.get('netWage').enable();
+  } else {
+    this.isNetWageActive = false;
+    this.joinusForm.patchValue({
+      netWage: ""
+    });
+    this.joinusForm.get('netWage').disable();
+  }
+ }
 
   ngAfterViewInit() {
       this.countryService.getCountriesList().subscribe((data)=>{

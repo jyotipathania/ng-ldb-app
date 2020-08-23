@@ -1,14 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 @Component({
-  selector: 'app-team',
-  templateUrl: './team.component.html',
-  styleUrls: ['./team.component.scss']
+  selector: 'app-our-partners',
+  templateUrl: './our-partners.component.html',
+  styleUrls: ['./our-partners.component.scss']
 })
-export class TeamComponent implements OnInit {
+export class OurPartnersComponent implements OnInit {
   customOptions: OwlOptions = {
     loop: false,
-		margin: 0,
+		margin: 30,
 		nav: false,
 		dots: true,
 		responsive: {

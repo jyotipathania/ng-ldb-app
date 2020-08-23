@@ -6,7 +6,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgxMaskModule, IConfig } from 'ngx-mask';
 import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 import { NgxTypedJsModule } from 'ngx-typed-js';
+import localesPl from '@angular/common/locales/pl';
 
+//registerLocaleData(localesPl, 'pl');
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -15,7 +17,7 @@ import { HeaderComponent } from './header/header.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { FeatureOneComponent } from './feature-one/feature-one.component';
 import { FeatureTwoComponent } from './feature-two/feature-two.component';
-import { TestimonialsComponent } from './testimonials/testimonials.component';
+//import { TestimonialsComponent } from './testimonials/testimonials.component';
 import { FooterComponent } from './footer/footer.component';
 import { TeamComponent } from './team/team.component'
 
@@ -26,6 +28,8 @@ import { JoinUsComponent } from './join-us/join-us.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { TokenInterceptor, counrtyTokenProvider } from './shared/token-interceptor';
+import { OurPartnersComponent } from './our-partners/our-partners.component';
+import { registerLocaleData } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -34,12 +38,13 @@ import { TokenInterceptor, counrtyTokenProvider } from './shared/token-intercept
     WelcomeComponent,
     FeatureOneComponent,
     FeatureTwoComponent,
-    TestimonialsComponent,
+    //TestimonialsComponent,
     FooterComponent,
     JoinUsComponent,
     HomepageComponent,
     TeamComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    OurPartnersComponent
   ],
   imports: [
     BrowserModule,

@@ -24,7 +24,7 @@ app.post('/sendFormData', (req, res) => {
   var transporter = nodemailer.createTransport({
     service: 'gmail',
     host: 'smtp.gmail.com',
-    secure: 'false',
+    secure: 'true',
     port: '465',
     auth: {
       user: process.env.EMAIL_USER, // must be Gmail
@@ -93,7 +93,33 @@ app.post('/sendFormData', (req, res) => {
                       <td valign="top" style="text-align: left;padding: 5px;font-family: Arial,sans-serif;font-size: 12px;line-height: 20px;margin: 0;border-collapse: collapse;">Phone</td>
                                   <td data-label="Phone" valign="top" style="padding: 5px;font-family: Arial,sans-serif;font-size: 12px;line-height: 20px;margin: 0;border-collapse: collapse;">${req.body.address.inputPhone}</td>
                                 </tr>
-                               
+
+                                <tr style="margin: 0;padding: 0;">
+                                <td valign="top" style="text-align: left;padding: 5px;font-family: Arial,sans-serif;font-size: 12px;line-height: 20px;margin: 0;border-collapse: collapse;">Are you Student?</td>
+                                            <td data-label="Phone" valign="top" style="padding: 5px;font-family: Arial,sans-serif;font-size: 12px;line-height: 20px;margin: 0;border-collapse: collapse;">${req.body.isStudent}</td>
+                                          </tr>
+
+                                          <tr style="margin: 0;padding: 0;">
+                                          <td valign="top" style="text-align: left;padding: 5px;font-family: Arial,sans-serif;font-size: 12px;line-height: 20px;margin: 0;border-collapse: collapse;">Are you less than 26 year old?</td>
+                                          <td data-label="Phone" valign="top" style="padding: 5px;font-family: Arial,sans-serif;font-size: 12px;line-height: 20px;margin: 0;border-collapse: collapse;">${req.body.ageCheck}</td>
+                                          </tr>
+                                          <tr style="margin: 0;padding: 0;">
+                                            <td valign="top" style="text-align: left;padding: 5px;font-family: Arial,sans-serif;font-size: 12px;line-height: 20px;margin: 0;border-collapse: collapse;">Are you working somewhere?</td>
+                                            <td data-label="Phone" valign="top" style="padding: 5px;font-family: Arial,sans-serif;font-size: 12px;line-height: 20px;margin: 0;border-collapse: collapse;">${req.body.isAlreadyEmployed}</td>
+                                          </tr>
+
+                                          <tr style="margin: 0;padding: 0;">
+                                            <td valign="top" style="text-align: left;padding: 5px;font-family: Arial,sans-serif;font-size: 12px;line-height: 20px;margin: 0;border-collapse: collapse;">Contract Type</td>
+                                            <td data-label="Phone" valign="top" style="padding: 5px;font-family: Arial,sans-serif;font-size: 12px;line-height: 20px;margin: 0;border-collapse: collapse;">${req.body.contractType != undefined ? req.body.contractType : 'NA'}</td>
+                                          </tr>
+                                          <tr style="margin: 0;padding: 0;">
+                                          <td valign="top" style="text-align: left;padding: 5px;font-family: Arial,sans-serif;font-size: 12px;line-height: 20px;margin: 0;border-collapse: collapse;">Are you earning more than minimum Wage 2600 PLN?</td>
+                                          <td data-label="Phone" valign="top" style="padding: 5px;font-family: Arial,sans-serif;font-size: 12px;line-height: 20px;margin: 0;border-collapse: collapse;">${req.body.isWageAboveThreshold}</td>
+                                        </tr>
+                                        <tr style="margin: 0;padding: 0;">
+                                        <td valign="top" style="text-align: left;padding: 5px;font-family: Arial,sans-serif;font-size: 12px;line-height: 20px;margin: 0;border-collapse: collapse;">amount in Gross</td>
+                                        <td data-label="Phone" valign="top" style="padding: 5px;font-family: Arial,sans-serif;font-size: 12px;line-height: 20px;margin: 0;border-collapse: collapse;">zł ${req.body.netWage  != undefined ? req.body.netWage : 'NA'}</td>
+                                      </tr>
                               </tbody>
                             </table>
     
@@ -134,7 +160,7 @@ console.log(req.body, 'data of form');
 var transporter = nodemailer.createTransport({
   service: 'gmail',
   host: 'smtp.gmail.com',
-  secure: 'false', //make it true in prod mode
+  secure: 'true', //make it true in prod mode
   port: '465',
   auth: {
     user: process.env.EMAIL_USER, // must be Gmail

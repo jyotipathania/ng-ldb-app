@@ -23,7 +23,7 @@
           "build": {
             "builder": "@angular-devkit/build-angular:browser",
             "options": {
-              "localize": true,
+              "localize": false,
               "i18nMissingTranslation": "error",
               "outputPath": "backend/ldb-app-frontend",
               "index": "src/index.html",
@@ -89,6 +89,9 @@
             "configurations": {
               "production": {
                 "browserTarget": "ldb-app:build:production"
+              },
+              "pl": {
+                "browserTarget": "ldb-app:build:pl"
               }
             }
           },

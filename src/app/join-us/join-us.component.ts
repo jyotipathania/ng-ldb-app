@@ -26,6 +26,7 @@ export class JoinUsComponent implements OnInit {
   isNetWageActive: boolean = true;
   contractListItems :any = ["Contract of employment", "Contract work", "Contract of mandate"];
   selectedContract:string;
+  iAgreePP: boolean = false;
   //Reactive form init
   //https://www.concretepage.com/angular-2/angular-2-4-email-validation-example
   //https://stackoverflow.com/questions/49371955/angular-4-reactive-forms-toggle-validation-for-hidden-form-elements
@@ -68,7 +69,8 @@ export class JoinUsComponent implements OnInit {
       isWageAboveThreshold: ["Yes"],
       netWage:["", [
         Validators.required
-      ]]
+      ]],
+      iAgreePP: ["", Validators.required]
       
     })
   }
@@ -128,8 +130,8 @@ export class JoinUsComponent implements OnInit {
         isStudent: "Yes",
       ageCheck: "Yes",
       isAlreadyEmployed: "Yes",
-      isWageAboveThreshold: "Yes"
-
+      isWageAboveThreshold: "Yes",
+      iAgreePP: ""
       });
       this.isAlreadyEmployed = true;
       this.isNetWageActive = true; 

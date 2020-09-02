@@ -17,5 +17,6 @@ export interface Iinfo {
     isAlreadyEmployed: string,
     contractType: string,
     isWageAboveThreshold: string,
-    netWage: string
+    netWage: string,
+    iAgreePP: string
   }

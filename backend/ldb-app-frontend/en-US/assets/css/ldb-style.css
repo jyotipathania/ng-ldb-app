@@ -1020,7 +1020,7 @@ footer .right-content {
   align-self: center;
 }
 
-.contact-form input,
+.contact-form input:not([type='checkbox']),
 .contact-form textarea,
 .contact-form select {
   color: #777;

@@ -30,6 +30,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { TokenInterceptor, counrtyTokenProvider } from './shared/token-interceptor';
 import { OurPartnersComponent } from './our-partners/our-partners.component';
 import { registerLocaleData } from '@angular/common';
+import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import { registerLocaleData } from '@angular/common';
     HomepageComponent,
     TeamComponent,
     PageNotFoundComponent,
-    OurPartnersComponent
+    OurPartnersComponent,
+    PrivacyPolicyComponent
   ],
   imports: [
     BrowserModule,

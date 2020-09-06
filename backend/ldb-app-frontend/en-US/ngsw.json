@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1599423610744,
+  "timestamp": 1599424604464,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -202,7 +202,7 @@
     "/assets/js/waypoints.min.js": "5f3e0f34b6d7460c5f160db4fe568cde29f3ffa5",
     "/bg_purple.2ecd4fd3750a3784c781.png": "35e49f8385a6b5f85ef8ee7a1a9a13eeb50bbdec",
     "/favicon.ico": "616b2fa96d5fe725f8eec8e307220da1ead6e966",
-    "/index.html": "04f506a183d0941692d304e56bd0e867b20a4944",
+    "/index.html": "1d48cf5443e82423b588a912e254f28766ba5a56",
     "/la-brands-400.3a8109c4ac75662f8355.woff2": "89f4f0d9ee3a2bde5fa250bbe6dc4a4804e1a863",
     "/la-brands-400.6ecea4826b87fafb97be.ttf": "10a04af3d80f9a83ef2412dedd6b76be7a0c0a66",
     "/la-brands-400.908ce19d18187969b32f.eot": "61e3ed8012597b290fb64922dd742218e3910c71",
@@ -218,8 +218,8 @@
     "/la-solid-900.4184d740eae2fb727bfe.eot": "ce4d112e98802c4f44f72017e4c41227c707aa8b",
     "/la-solid-900.893634871a6cbff72157.woff": "ef62110ef84b45b9f583793f294128b06afca6d4",
     "/la-solid-900.a813034654b4ff0a0bac.svg": "e8aff2133506e1e2ed5e37b0819dd35cf2e9044b",
-    "/main-es2015.4bb2f20153c28d761218.js": "5817260879f3c62bdb988aa485733c09e018905b",
-    "/main-es5.4bb2f20153c28d761218.js": "95c15a2db8e5f533a5fd06991200a5c7c3837a23",
+    "/main-es2015.4bb2f20153c28d761218.js": "2f442702c2b4bec5a4037ae781ca2d036b130391",
+    "/main-es5.4bb2f20153c28d761218.js": "e29e0d2903bd83af5ac1b8f64b33f65337478a9a",
     "/manifest.webmanifest": "95cd1b5663e0f8788f1204fff7b2181c4f7c1c05",
     "/overlay_stars.3e7fd575d359a0f17a97.svg": "8f1dd3fa57e2943457a2777ddfda175ee5b94d69",
     "/owl.video.play.7f01b07148f205f6e825.png": "c0d64356ec2758cb280d183b4829c923e5ff61e5",

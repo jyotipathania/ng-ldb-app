@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1599422717731,
+  "timestamp": 1599423610948,
   "index": "/pl/index.html",
   "assetGroups": [
     {
@@ -13,8 +13,8 @@
       "urls": [
         "/pl/favicon.ico",
         "/pl/index.html",
-        "/pl/main-es2015.be8589c6b15ce8a30e7c.js",
-        "/pl/main-es5.be8589c6b15ce8a30e7c.js",
+        "/pl/main-es2015.4bb2f20153c28d761218.js",
+        "/pl/main-es5.4bb2f20153c28d761218.js",
         "/pl/manifest.webmanifest",
         "/pl/polyfills-es2015.cdc429b07113c4213cf4.js",
         "/pl/polyfills-es5.ef8d934d0fd73759de49.js",
@@ -202,7 +202,7 @@
     "/pl/assets/js/waypoints.min.js": "5f3e0f34b6d7460c5f160db4fe568cde29f3ffa5",
     "/pl/bg_purple.2ecd4fd3750a3784c781.png": "35e49f8385a6b5f85ef8ee7a1a9a13eeb50bbdec",
     "/pl/favicon.ico": "616b2fa96d5fe725f8eec8e307220da1ead6e966",
-    "/pl/index.html": "da807306bc3d546e20e5242bbecc6304efe66a25",
+    "/pl/index.html": "d250d0bb81edfe8f522efb5933a7b23fa78df475",
     "/pl/la-brands-400.3a8109c4ac75662f8355.woff2": "89f4f0d9ee3a2bde5fa250bbe6dc4a4804e1a863",
     "/pl/la-brands-400.6ecea4826b87fafb97be.ttf": "10a04af3d80f9a83ef2412dedd6b76be7a0c0a66",
     "/pl/la-brands-400.908ce19d18187969b32f.eot": "61e3ed8012597b290fb64922dd742218e3910c71",
@@ -218,8 +218,8 @@
     "/pl/la-solid-900.4184d740eae2fb727bfe.eot": "ce4d112e98802c4f44f72017e4c41227c707aa8b",
     "/pl/la-solid-900.893634871a6cbff72157.woff": "ef62110ef84b45b9f583793f294128b06afca6d4",
     "/pl/la-solid-900.a813034654b4ff0a0bac.svg": "e8aff2133506e1e2ed5e37b0819dd35cf2e9044b",
-    "/pl/main-es2015.be8589c6b15ce8a30e7c.js": "d8220e812ea3903685f540aab05c575b03962f3a",
-    "/pl/main-es5.be8589c6b15ce8a30e7c.js": "b5943c01931ccc342f52504645051ed923818fca",
+    "/pl/main-es2015.4bb2f20153c28d761218.js": "196d64f43297c5a68e769b14fc58c36bb54fb0fa",
+    "/pl/main-es5.4bb2f20153c28d761218.js": "cf41ec8733e82e1dc31ca5f21bf05c4fee33e6cb",
     "/pl/manifest.webmanifest": "95cd1b5663e0f8788f1204fff7b2181c4f7c1c05",
     "/pl/overlay_stars.3e7fd575d359a0f17a97.svg": "8f1dd3fa57e2943457a2777ddfda175ee5b94d69",
     "/pl/owl.video.play.7f01b07148f205f6e825.png": "c0d64356ec2758cb280d183b4829c923e5ff61e5",

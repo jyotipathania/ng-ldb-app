@@ -1039,6 +1039,14 @@ footer .right-content {
   margin-bottom: 30px;
 }
 
+.contact-form input.is-invalid:not([type='checkbox']) {
+  border-color: #dc3545;
+}
+
+.contact-form input.is-valid:not([type='checkbox']) { 
+  border-color: #28a745;
+}
+
 .contact-form textarea {
   height: 150px;
   resize: none;

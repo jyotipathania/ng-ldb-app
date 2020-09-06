@@ -641,6 +641,29 @@
           <context context-type="linenumber">449</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="TeamTagLineMain" datatype="html">
+        <source>Our</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/team/team.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="764a8a101f8ee5a4b98844e93406182fb078507b" datatype="html">
+        <source>Team</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/team/team.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <note priority="1" from="description">TeamTagLineSub</note>
+      </trans-unit>
+      <trans-unit id="dad00d3f9b81d77dfac116ea0dbe9ec1b3c77795" datatype="html">
+        <source>Trust the professionals</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/team/team.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+        <note priority="1" from="description">TeamDescription</note>
+      </trans-unit>
       <trans-unit id="2b47d5bf5d02afcb5db0e6fe6de0e21c807b423a" datatype="html">
         <source>Managing Director</source>
         <context-group purpose="location">

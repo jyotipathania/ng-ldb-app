@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1599496737996,
+  "timestamp": 1599497366996,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -13,8 +13,8 @@
       "urls": [
         "/favicon.ico",
         "/index.html",
-        "/main-es2015.66fc90dad25e61abeb4b.js",
-        "/main-es5.66fc90dad25e61abeb4b.js",
+        "/main-es2015.4bb2f20153c28d761218.js",
+        "/main-es5.4bb2f20153c28d761218.js",
         "/manifest.webmanifest",
         "/polyfills-es2015.cdc429b07113c4213cf4.js",
         "/polyfills-es5.ef8d934d0fd73759de49.js",
@@ -202,7 +202,7 @@
     "/assets/js/waypoints.min.js": "5f3e0f34b6d7460c5f160db4fe568cde29f3ffa5",
     "/bg_purple.2ecd4fd3750a3784c781.png": "35e49f8385a6b5f85ef8ee7a1a9a13eeb50bbdec",
     "/favicon.ico": "616b2fa96d5fe725f8eec8e307220da1ead6e966",
-    "/index.html": "59813ba3bc261d1b4cb8680880e57bcfda21f1fe",
+    "/index.html": "f7dd6c854231ab141b0146cd8511e0f53bb8780d",
     "/la-brands-400.3a8109c4ac75662f8355.woff2": "89f4f0d9ee3a2bde5fa250bbe6dc4a4804e1a863",
     "/la-brands-400.6ecea4826b87fafb97be.ttf": "10a04af3d80f9a83ef2412dedd6b76be7a0c0a66",
     "/la-brands-400.908ce19d18187969b32f.eot": "61e3ed8012597b290fb64922dd742218e3910c71",
@@ -218,8 +218,8 @@
     "/la-solid-900.4184d740eae2fb727bfe.eot": "ce4d112e98802c4f44f72017e4c41227c707aa8b",
     "/la-solid-900.893634871a6cbff72157.woff": "ef62110ef84b45b9f583793f294128b06afca6d4",
     "/la-solid-900.a813034654b4ff0a0bac.svg": "e8aff2133506e1e2ed5e37b0819dd35cf2e9044b",
-    "/main-es2015.66fc90dad25e61abeb4b.js": "0b707b49aa4b5b4de2d7def8e523742942631d61",
-    "/main-es5.66fc90dad25e61abeb4b.js": "9b553e346c8358c8476fc32c839b2527093188f7",
+    "/main-es2015.4bb2f20153c28d761218.js": "196d64f43297c5a68e769b14fc58c36bb54fb0fa",
+    "/main-es5.4bb2f20153c28d761218.js": "cf41ec8733e82e1dc31ca5f21bf05c4fee33e6cb",
     "/manifest.webmanifest": "95cd1b5663e0f8788f1204fff7b2181c4f7c1c05",
     "/overlay_stars.3e7fd575d359a0f17a97.svg": "8f1dd3fa57e2943457a2777ddfda175ee5b94d69",
     "/owl.video.play.7f01b07148f205f6e825.png": "c0d64356ec2758cb280d183b4829c923e5ff61e5",

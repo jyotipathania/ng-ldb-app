@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, LOCALE_ID, Inject } from '@angular/core';
 import * as $ from 'jquery';
 
 
@@ -9,10 +9,11 @@ import * as $ from 'jquery';
 })
 export class HeaderComponent implements OnInit {
   localesList = [
-    { code: "en-US", label: "EN"},
-    { code: "pl", label: "PL"}
+    { code: "pl", label: "PL"},
+    { code: "en", label: "EN"}
+    
   ]
-  constructor() { }
+  constructor(@Inject(LOCALE_ID) protected localeId: string) { }
 
   ngOnInit(): void {
     $(function(){

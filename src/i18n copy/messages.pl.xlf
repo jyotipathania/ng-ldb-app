@@ -1,0 +1,904 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-US" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="HeaderLinkHome" datatype="html">
+        <source>Home</source>
+        <target>Strona główna</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/header/header.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="HeaderLinkAbout" datatype="html">
+        <source>About Us</source>
+        <target>O nas</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/header/header.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="HeaderLinkService" datatype="html">
+        <source>Our Services</source>
+        <target>Usługi</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/header/header.component.html</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="HeaderLinkTeam" datatype="html">
+        <source>Our Team</source>
+        <target>Zespół</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/header/header.component.html</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="HeaderLinkContact" datatype="html">
+        <source>Contact Us</source>
+        <target>Skontaktuj się z nami</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/header/header.component.html</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="WelcomeTagLineMain" datatype="html">
+        <source>Business Beyond</source>
+        <target>Biznes Poza</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/welcome/welcome.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="WelcomeTagLineSub" datatype="html">
+        <source>Borders</source>
+        <target>Granicami</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/welcome/welcome.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="WelcomeKnowMoreBtn" datatype="html">
+        <source>KNOW US BETTER</source>
+        <target>POZNAJ NAS LEPIEJ</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/welcome/welcome.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="AboutTagLineMain" datatype="html">
+        <source>About</source>
+        <target>O</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/feature-one/feature-one.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="c0a38d58cd2bad849ca5573f03be5f3b80c9bde6" datatype="html">
+        <source> Us</source>
+        <target>Nas</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/feature-one/feature-one.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+        <note priority="1" from="description">AboutTagLineSub</note>
+      </trans-unit>
+      <trans-unit id="8f4adae597b56f32b354eef64b42ac729d3409b4" datatype="html">
+        <source>LDB Polska is a consulting firm that serves leading businesses, non-government organizations interested in investing poland. We are passionate about helping our clients achieve practical results with real impact. The company was founded in  2019 and named after the family:  Lakshman Pathania, Deepak Pathania and Beata Pathania - Hence the name LDB. We are specialize in wide range of  business sectors consulting restaurants,  real estate, import export, IT services, Logistics and Supply Chain Management.</source>
+        <target>LDB Polska to firma doradcza obsługująca wiodące biznesy, organizacje pozarządowe zainteresowane inwestowaniem w Polsce. Z pasją pomagamy naszym klientom osiągać praktyczne wyniki z realnym wpływem. Firma powstała w 2019 roku i nazwana na cześć rodziny: Lakshman, Deepak i Beata - stąd nazwa LDB. Specjalizujemy się w szerokim zakresie doradztwa biznesowego w zakresie restauracji, nieruchomości, importu, eksportu, usług IT, logistyki i zarządzania łańcuchem dostaw.
+</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/feature-one/feature-one.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+        <note priority="1" from="description">AboutDescription</note>
+      </trans-unit>
+      <trans-unit id="ServiceTagLineMain" datatype="html">
+        <source>Our</source>
+        <target>Nasze</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/feature-two/feature-two.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/our-partners/our-partners.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6fd20ba9c153a12714412f10aa09d1d3d588de38" datatype="html">
+        <source> Services</source>
+        <target> Usługi</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/feature-two/feature-two.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+        <note priority="1" from="description">ServiceTagLineSub</note>
+      </trans-unit>
+      <trans-unit id="44fe110aca8d4120a6370d29d9a70f4a106c8d52" datatype="html">
+        <source>Gastronomy</source>
+        <target>Gastronomia</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/feature-two/feature-two.component.html</context>
+          <context context-type="linenumber">78</context>
+        </context-group>
+        <note priority="1" from="description">ServiceHeading1</note>
+      </trans-unit>
+      <trans-unit id="babe59f9a0b7c9bd52c19fcb3f84f3e424bf6325" datatype="html">
+        <source>We deal in Shaping Restaurants and and Successful gastronomy concepts.</source>
+        <target>Zajmujemy się kształtowaniem restauracji i udanymi koncepcjami gastronomicznymi.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/feature-two/feature-two.component.html</context>
+          <context context-type="linenumber">79</context>
+        </context-group>
+        <note priority="1" from="description">ServicePara1</note>
+      </trans-unit>
+      <trans-unit id="d29e6ad4d18c1ff16942c0370ab205656bd6b2f1" datatype="html">
+        <source>Real Estate</source>
+        <target>Nieruchomości</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/feature-two/feature-two.component.html</context>
+          <context context-type="linenumber">92</context>
+        </context-group>
+        <note priority="1" from="description">ServiceHeading2</note>
+      </trans-unit>
+      <trans-unit id="a6e674cd59952db37d8314f7f660c67599b6909c" datatype="html">
+        <source>We provide comprehensive analysis for executive housing decisions. We help our clients to identify the best investment opportunities in the housing sector.</source>
+        <target>Zapewniamy kompleksową analizę decyzji wykonawczych dotyczących mieszkań. Pomagamy naszym klientom zidentyfikować najlepsze możliwości inwestycyjne w sektorze mieszkaniowym.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/feature-two/feature-two.component.html</context>
+          <context context-type="linenumber">93</context>
+        </context-group>
+        <note priority="1" from="description">ServicePara2</note>
+      </trans-unit>
+      <trans-unit id="7955537239a51923ae0c95fcdc458cd1cf772c8c" datatype="html">
+        <source>Import Export</source>
+        <target>Import eksport</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/feature-two/feature-two.component.html</context>
+          <context context-type="linenumber">108</context>
+        </context-group>
+        <note priority="1" from="description">ServiceHeading3</note>
+      </trans-unit>
+      <trans-unit id="0c8768c4f3c89534e72289236bfbf089690accb3" datatype="html">
+        <source>Assisting businesses in exporting and importing their goods throughout  the international market.</source>
+        <target>Pomoc firmom w eksporcie i imporcie ich towarów na rynku międzynarodowym.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/feature-two/feature-two.component.html</context>
+          <context context-type="linenumber">109</context>
+        </context-group>
+        <note priority="1" from="description">ServicePara3</note>
+      </trans-unit>
+      <trans-unit id="a8365b7a2245ca296ece9ac7c9abb0f0a4fab747" datatype="html">
+        <source>Logistics and Supply</source>
+        <target>Logistyka i zarządzanie łańcuchem dostaw</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/feature-two/feature-two.component.html</context>
+          <context context-type="linenumber">122</context>
+        </context-group>
+        <note priority="1" from="description">ServiceHeading4</note>
+      </trans-unit>
+      <trans-unit id="c7efbfeb7221435ba69b9bd155ca36d0378b0a34" datatype="html">
+        <source>The Logistics and Distribution functions within the Supply Chain encompass transportation, stock control and warehousing. Our consultant ensures that the flow of goods and materials are balanced to the most efficient cost base and aligned with customer requirements.
+                      </source>
+        <target>Funkcje logistyki i dystrybucji w ramach łańcucha dostaw obejmują: transport, kontrolę zapasów i magazynowanie. Nasz konsultant zapewnia, że przepływ towarów i materiałów jest zrównoważony do najbardziej efektywnej podstawy kosztowej i dostosowany do wymagań klienta.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/feature-two/feature-two.component.html</context>
+          <context context-type="linenumber">123</context>
+        </context-group>
+        <note priority="1" from="description">ServicePara4</note>
+      </trans-unit>
+      <trans-unit id="9ee36e39e3dcfe413cc81c32554c38af39856a76" datatype="html">
+        <source>IT Services</source>
+        <target>Usługi IT</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/feature-two/feature-two.component.html</context>
+          <context context-type="linenumber">139</context>
+        </context-group>
+        <note priority="1" from="description">ServiceHeading5</note>
+      </trans-unit>
+      <trans-unit id="554bfd1694a49be690a5810a232dfe403b170a40" datatype="html">
+        <source>We work closely with our clients to create outstanding high performance and safe custom websites, custom designs, logo designing, e-commerce websites and mobile applications.</source>
+        <target>Ściśle współpracujemy z naszymi klientami, aby tworzyć wyjątkowo wydajne i bezpieczne niestandardowe witryny internetowe, niestandardowe projekty, projektowanie logo, witryny e-commerce oraz aplikacje na telefon.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/feature-two/feature-two.component.html</context>
+          <context context-type="linenumber">140</context>
+        </context-group>
+        <note priority="1" from="description">ServicePara5</note>
+      </trans-unit>
+      <trans-unit id="UberPartnershipPara" datatype="html">
+        <source>We are registered Uber eats fleet partner. Want to join us?</source>
+        <target>Jesteśmy zarejestrowanym partnerem flotowym Uber eats. Chcesz do nas dołączyć?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/feature-two/feature-two.component.html</context>
+          <context context-type="linenumber">167</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="UberPartnershipBtn" datatype="html">
+        <source>Apply Now</source>
+        <target>Aplikuj teraz</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/feature-two/feature-two.component.html</context>
+          <context context-type="linenumber">170</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="FooterFormTagLineMain" datatype="html">
+        <source>Contact Us</source>
+        <target>Skontaktuj się z nami</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/footer/footer.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="FooterFormTagLinePara" datatype="html">
+        <source>For any inquiries, please email us using the form below.</source>
+        <target>W przypadku jakichkolwiek pytań prosimy o kontakt mailowy za pomocą poniższego formularza.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/footer/footer.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="FooterFormSuccess" datatype="html">
+        <source>Congratulations!</source>
+        <target>Gratulacje!</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/footer/footer.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/join-us/join-us.component.html</context>
+          <context context-type="linenumber">44</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="FooterFormSuccessMsg" datatype="html">
+        <source>We have received your request will get back to you as soon as possible.</source>
+        <target>Otrzymaliśmy Twoją prośbę i skontaktujemy się z Tobą tak szybko, jak to możliwe.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/footer/footer.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/join-us/join-us.component.html</context>
+          <context context-type="linenumber">44</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="FooterFormUserRoleDefault" datatype="html">
+        <source>How can we help you? Please select</source>
+        <target>Jak możemy ci pomóc? Proszę wybrać</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/footer/footer.component.html</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="d42c468efff9c888452da9f50bcedf566fac2311" datatype="html">
+        <source>{VAR_SELECT, select, I am interested for Partnership {I am interested for Partnership} I am Interested for IT Services {I am Interested for IT Services} I am Looking for information {I am Looking for information} Other {Other} }</source>
+        <target>{VAR_SELECT, select, I am interested for Partnership {Jestem zainteresowany partnerstwem} I am Interested for IT Services {Jestem zainteresowany usługami IT} I am Looking for information {Szukam informacji} Other {Inny} }</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/footer/footer.component.html</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="484b0e541230d60ddb5fbd771a34a5c8d90e7a57" datatype="html">
+        <source>Full Name</source>
+        <target>Pełne imię i nazwisko</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/footer/footer.component.html</context>
+          <context context-type="linenumber">49</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="76ac4642f2d845f70b3b3d784cccb88212855d5a" datatype="html">
+        <source>E-Mail Address</source>
+        <target>Adres e-mail</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/footer/footer.component.html</context>
+          <context context-type="linenumber">64</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2c87c5b937fda814bba8d1f0b4b69bea26509b7d" datatype="html">
+        <source>Your Message</source>
+        <target>Twoja wiadomość</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/footer/footer.component.html</context>
+          <context context-type="linenumber">86</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="FooterFormSubmitText" datatype="html">
+        <source>Send Message Now</source>
+        <target>Wyślij wiadomość teraz</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/footer/footer.component.html</context>
+          <context context-type="linenumber">97</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="FooterCopyText" datatype="html">
+        <source>Copyright</source>
+        <target>prawa autorskie</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/footer/footer.component.html</context>
+          <context context-type="linenumber">132</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="FooterMadeBy" datatype="html">
+        <source>Designed by</source>
+        <target>Zaprojektowany przez</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/footer/footer.component.html</context>
+          <context context-type="linenumber">134</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="JoinUsLinkGoBack" datatype="html">
+        <source>Go back</source>
+        <target>Wróć</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/join-us/join-us.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="JoinUsHeading" datatype="html">
+        <source>Tell us about yourself</source>
+        <target>Opowiedz nam o sobie</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/join-us/join-us.component.html</context>
+          <context context-type="linenumber">39</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="JoinUsSuccessText1" datatype="html">
+        <source>Congratulations!</source>
+        <target>Gratulacje!</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/join-us/join-us.component.html</context>
+          <context context-type="linenumber">44</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="JoinUsSuccessText2" datatype="html">
+        <source>We have received your request will get back to you as soon as possible.</source>
+        <target>Otrzymaliśmy Twoją prośbę i skontaktujemy się z Tobą tak szybko, jak to możliwe.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/join-us/join-us.component.html</context>
+          <context context-type="linenumber">44</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="JoinFormFirstName" datatype="html">
+        <source>First Name</source>
+        <target>Imię</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/join-us/join-us.component.html</context>
+          <context context-type="linenumber">55</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="JoinFormFirstNameError" datatype="html">
+        <source>Input can&apos;t be empty.</source>
+        <target>Dane wejściowe nie mogą być puste.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/join-us/join-us.component.html</context>
+          <context context-type="linenumber">68</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="JoinFormLastName" datatype="html">
+        <source>Last Name</source>
+        <target>Nazwisko</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/join-us/join-us.component.html</context>
+          <context context-type="linenumber">73</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="JoinFormLastNameError" datatype="html">
+        <source>Input can&apos;t be empty.</source>
+        <target>Dane wejściowe nie mogą być puste.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/join-us/join-us.component.html</context>
+          <context context-type="linenumber">86</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="JoinFormEmail" datatype="html">
+        <source>Email</source>
+        <target>Adres e-mail</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/join-us/join-us.component.html</context>
+          <context context-type="linenumber">93</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="JoinFormEmailEmptyError" datatype="html">
+        <source>
+                  Input can&apos;t be empty.
+                </source>
+                <target>Dane wejściowe nie mogą być puste.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/join-us/join-us.component.html</context>
+          <context context-type="linenumber">106</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="JoinFormEmailInvalidError" datatype="html">
+        <source>
+                  Invalid Email id.
+                </source>
+                <target>Nieprawidłowy identyfikator e-mail.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/join-us/join-us.component.html</context>
+          <context context-type="linenumber">109</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="JoinFormPessel" datatype="html">
+        <source>Pessel/Passport Number</source>
+        <target>Numer Pessel / paszportu</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/join-us/join-us.component.html</context>
+          <context context-type="linenumber">115</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="JoinFormPesselError" datatype="html">
+        <source>
+                  Input can&apos;t be empty.
+                </source>
+                <target>Dane wejściowe nie mogą być puste.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/join-us/join-us.component.html</context>
+          <context context-type="linenumber">128</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="JoinFormAddressError" datatype="html">
+        <source>
+                Input can&apos;t be empty.
+              </source>
+              <target>Dane wejściowe nie mogą być puste.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/join-us/join-us.component.html</context>
+          <context context-type="linenumber">150</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="JoinFormAddress2" datatype="html">
+        <source>Address 2</source>
+        <target>adres 2</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/join-us/join-us.component.html</context>
+          <context context-type="linenumber">155</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="JoinFormAddress2Error" datatype="html">
+        <source>
+                Input can&apos;t be empty.
+              </source>
+              <target>Dane wejściowe nie mogą być puste.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/join-us/join-us.component.html</context>
+          <context context-type="linenumber">162</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="JoinFormCountry" datatype="html">
+        <source>Select Country</source>
+        <target>Wybierz kraj</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/join-us/join-us.component.html</context>
+          <context context-type="linenumber">168</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="JoinFormState" datatype="html">
+        <source>State</source>
+        <target>Stan</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/join-us/join-us.component.html</context>
+          <context context-type="linenumber">184</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="JoinFormStateError" datatype="html">
+        <source>
+                  Please select a valid state.
+                </source>
+                <target>Wybierz prawidłowy stan.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/join-us/join-us.component.html</context>
+          <context context-type="linenumber">204</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="JoinFormCity" datatype="html">
+        <source>City </source>
+        <target>Miasto</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/join-us/join-us.component.html</context>
+          <context context-type="linenumber">209</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="JoinFormCityError" datatype="html">
+        <source>
+                  Please select a valid city.
+                </source>
+                <target>Wybierz prawidłowe miasto.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/join-us/join-us.component.html</context>
+          <context context-type="linenumber">230</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="JoinFormZip" datatype="html">
+        <source>Zip</source>
+        <target>Kod pocztowy</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/join-us/join-us.component.html</context>
+          <context context-type="linenumber">235</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="JoinFormZipEmptyError" datatype="html">
+        <source>
+                  Input can&apos;t be empty.
+                </source>
+                <target>Dane wejściowe nie mogą być puste.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/join-us/join-us.component.html</context>
+          <context context-type="linenumber">251</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="JoinFormZipInvalidError" datatype="html">
+        <source>
+                  Invalid zipcode.
+                </source>
+                <target>Niepoprawny kod pocztowy.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/join-us/join-us.component.html</context>
+          <context context-type="linenumber">254</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="JoinFormPhone" datatype="html">
+        <source>Phone</source>
+        <target>Telefon</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/join-us/join-us.component.html</context>
+          <context context-type="linenumber">259</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="JoinFormPhoneEmptyError" datatype="html">
+        <source>
+                  Input can&apos;t be empty.
+                </source>
+                <target>Dane wejściowe nie mogą być puste.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/join-us/join-us.component.html</context>
+          <context context-type="linenumber">274</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="JoinFormPhoneInvalidError" datatype="html">
+        <source>
+                  Invalid phone number.
+                </source>
+                <target>Nieprawidłowy numer telefonu.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/join-us/join-us.component.html</context>
+          <context context-type="linenumber">277</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="JoinFormIsStudent" datatype="html">
+        <source>Are you Student?</source>
+        <target>Jesteś studentem?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/join-us/join-us.component.html</context>
+          <context context-type="linenumber">286</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="JoinFormIsStudentYes" datatype="html">
+        <source>Yes</source>
+        <target>Tak</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/join-us/join-us.component.html</context>
+          <context context-type="linenumber">295</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="JoinFormIsStudentNo" datatype="html">
+        <source>No</source>
+        <target>Nie</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/join-us/join-us.component.html</context>
+          <context context-type="linenumber">304</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="JoinFormAgeCheck" datatype="html">
+        <source>Are you less than 26 year old?</source>
+        <target>Masz mniej niż 26 lat?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/join-us/join-us.component.html</context>
+          <context context-type="linenumber">310</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="JoinFormAgeCheckYes" datatype="html">
+        <source>Yes</source>
+        <target>Tak</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/join-us/join-us.component.html</context>
+          <context context-type="linenumber">318</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="JoinFormAgeCheckNo" datatype="html">
+        <source>No</source>
+        <target>Nie</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/join-us/join-us.component.html</context>
+          <context context-type="linenumber">327</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="JoinFormIsAlreadyEmployed" datatype="html">
+        <source>Are you working somewhere?</source>
+        <target>Pracujesz gdzieś?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/join-us/join-us.component.html</context>
+          <context context-type="linenumber">333</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="JoinFormIsAlreadyEmployedYes" datatype="html">
+        <source>Yes</source>
+        <target>Tak</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/join-us/join-us.component.html</context>
+          <context context-type="linenumber">343</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="JoinFormIsAlreadyEmployedNo" datatype="html">
+        <source>No</source>
+        <target>Nie</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/join-us/join-us.component.html</context>
+          <context context-type="linenumber">354</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="JoinFormContractType" datatype="html">
+        <source>Please choose the contract</source>
+        <target>Wybierz umowę</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/join-us/join-us.component.html</context>
+          <context context-type="linenumber">359</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="e9c1df07ad6f9b7625b3eee37aa7d40da226f07d" datatype="html">
+        <source>{VAR_SELECT, select, Contract of employment {Contract of employment} Contract work {Contract work} Contract of mandate {Contract of mandate} }</source>
+        <target>{VAR_SELECT, select, Contract of employment {Umowa o pracę} Contract work {Praca kontraktowa} Contract of mandate {Umowa zlecenia} }</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/join-us/join-us.component.html</context>
+          <context context-type="linenumber">371</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="JoinFormIsWageAboveThreshold" datatype="html">
+        <source>Are you earning more than minimum Wage 2600 PLN?</source>
+        <target>Zarabiasz więcej niż minimalne wynagrodzenie 2600 zł?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/join-us/join-us.component.html</context>
+          <context context-type="linenumber">379</context>
+        </context-group>
+      </trans-unit>
+ <trans-unit id="JoinFormIsWageAboveThresholdYes" datatype="html">
+        <source>Yes</source>
+        <target>Tak</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/join-us/join-us.component.html</context>
+          <context context-type="linenumber">389</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="JoinFormIsWageAboveThresholdNo" datatype="html">
+        <source>No</source>
+        <target>Nie</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/join-us/join-us.component.html</context>
+          <context context-type="linenumber">400</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="JoinFormNetWage" datatype="html">
+        <source>Please mention amount in Gross</source>
+        <target>Proszę podać kwotę w brutto</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/join-us/join-us.component.html</context>
+          <context context-type="linenumber">405</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="JoinFormNetWageEmptyError" datatype="html">
+        <source>
+                  Input can&apos;t be empty.
+                </source>
+                 <target>Dane wejściowe nie mogą być puste.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/join-us/join-us.component.html</context>
+          <context context-type="linenumber">420</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="IAgreePrivacyPolicy" datatype="html">
+        <source>
+                  I have read and accept the <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>privacy policy<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>
+                </source>
+                <target>
+                  
+przeczytałem i akceptuję <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>Polityka prywatności<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>
+                </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/join-us/join-us.component.html</context>
+          <context context-type="linenumber">432</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="JoinFormIAgreePPError" datatype="html">
+        <source>
+                  You must agree before submitting.
+                </source>
+                <target>
+                  Musisz wyrazić zgodę przed przesłaniem.
+                </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/join-us/join-us.component.html</context>
+          <context context-type="linenumber">435</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="JoinFormSubmit" datatype="html">
+        <source>Submit</source>
+        <target>Zatwierdź</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/join-us/join-us.component.html</context>
+          <context context-type="linenumber">432</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="JoinFormProcessing" datatype="html">
+        <source>Processing...</source>
+        <target>Przetwarzanie...</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/join-us/join-us.component.html</context>
+          <context context-type="linenumber">434</context>
+        </context-group>
+      </trans-unit>
+            <trans-unit id="TeamTagLineMain" datatype="html">
+        <source>Our</source>
+        <target>Nasz</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/team/team.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="764a8a101f8ee5a4b98844e93406182fb078507b" datatype="html">
+        <source>Team</source>
+        <target>Zespół</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/team/team.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <note priority="1" from="description">TeamTagLineSub</note>
+      </trans-unit>
+      <trans-unit id="dad00d3f9b81d77dfac116ea0dbe9ec1b3c77795" datatype="html">
+        <source>Trust the professionals</source>
+        <target>Zaufaj profesjonalistom</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/team/team.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+        <note priority="1" from="description">TeamDescription</note>
+      </trans-unit>
+      <trans-unit id="2b47d5bf5d02afcb5db0e6fe6de0e21c807b423a" datatype="html">
+        <source>Managing Director</source>
+        <target>Dyrektor zarządzający</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/team/team.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+        <note priority="1" from="description">TeamMD</note>
+      </trans-unit>
+      <trans-unit id="cc7cc6d3ab8dfa39501aa59c4b3412ef25818d5d" datatype="html">
+        <source>Manager</source>
+        <target>Menedżer</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/team/team.component.html</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+        <note priority="1" from="description">TeamManager</note>
+      </trans-unit>
+      <trans-unit id="091bdf5006cdb6542f225b78897367783d2c9151" datatype="html">
+        <source>HR Specialist</source>
+        <target>Specjalista ds. HR</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/team/team.component.html</context>
+          <context context-type="linenumber">44</context>
+        </context-group>
+        <note priority="1" from="description">TeamHR1</note>
+      </trans-unit>
+      <trans-unit id="PartnerTagLineMain" datatype="html">
+        <source>Our</source>
+        <target>Nasz</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/our-partners/our-partners.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="PartnerTagLineSub" datatype="html">
+        <source>Partners</source>
+        <target>Wzmacniacz</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/our-partners/our-partners.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="PartnerTagPara" datatype="html">
+        <source>Uber Eats, Glovo and Blinkee City  We are working closely with our partner to generate revenue that can be mutually beneficial and provide delivery services across the various cities in poland.</source>
+       <target>Uber Eats, Glovo i Blinkee City Ściśle współpracujemy z naszym partnerem, aby generować przychody, które mogą być korzystne dla obu stron i świadczyć usługi dostawcze w różnych miastach w Polsce.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/our-partners/our-partners.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="PrivacyHeading" datatype="html">
+        <source>Privacy Policy</source>
+        <target>Polityka prywatności</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">39</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="PrivacyH1" datatype="html">
+        <source>What is the purpose and legal basis for processing your personal data?</source>
+        <target>Jaki jest cel i podstawa prawna przetwarzania Twoich danych osobowych?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">48</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="PrivacySubPara" datatype="html">
+        <source>The basis for processing your personal data is a cooperation agreement with the Partner for services provided by Uber in Poland. Your personal data is processed by LDB. for the following purposes:</source>
+        <target>Podstawą przetwarzania Twoich danych osobowych jest umowa o współpracy z Partnerem w zakresie usług świadczonych przez Uber w Polsce. Twoje dane osobowe są przetwarzane przez LDB. w następujących celach:
+</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">49</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="PrivacyListItem1" datatype="html">
+        <source>Conclusion and performance of a contract between us (Article 6 paragraph (1b) GDPR - execution of the contract)</source>
+        <target>Zawarcie i wykonanie umowy między nami (art. 6 ust. 1 lit. b RODO - wykonanie umowy)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">51</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="PrivacyListItem2" datatype="html">
+        <source>Contact regarding the contract between us (Article 6(1b) GDPR - execution of the contract)</source>
+        <target>Kontakt w sprawie zawartej między nami umowy (art. 6 ust. 1 lit. b RODO - wykonanie umowy)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">53</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="PrivacyListItem3" datatype="html">
+        <source>Handling your enquiries and complaints, including the resolution of technical problems (Article 6(1) c of the GDR - performance of our legal obligations)</source>
+        <target>Obsługa zapytań i reklamacji, w tym rozwiązywanie problemów technicznych (art. 6 ust. 1 lit. c RODO - realizacja naszych zobowiązań prawnych)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">55</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="PrivacyListItem4" datatype="html">
+        <source>Accounting (Article 6(1)(c) of the GDP - performance of our legal obligations)</source>
+        <target>Rachunkowość (art. 6 ust. 1 lit. c RODO - realizacja ciążących na nas obowiązków prawnych)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">57</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="PrivacyListItem5" datatype="html">
+        <source>To conduct judicial and administrative proceedings (Article 6(1) f, GDP - our legally justified business)</source>
+        <target>Prowadzenie postępowań sądowych i administracyjnych (art. 6 ust. 1 lit. f RODO - nasza prawnie usprawiedliwiona działalność)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">59</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="PrivacyListItem6" datatype="html">
+        <source>For marketing purposes (Article 6(1) a GDP - consent)</source>
+        <target>W celach marketingowych (art. 6 ust. 1 a RODO - zgoda)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">61</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="PrivacyListItem7" datatype="html">
+        <source>The possibilities of using the Uber application for all its functionalities, details can be found under the link; https://privacy.uber.com/policy/</source>
+        <target>Możliwości wykorzystania aplikacji Uber dla wszystkich jej funkcjonalności, szczegóły pod linkiem; https://privacy.uber.com/policy/</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">63</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="PrivacyListItem8" datatype="html">
+        <source>Possible other circumstances, resulting from the cooperation process and necessary for its legally correct implementation</source>
+        <target>Ewentualne inne okoliczności, wynikające z procesu współpracy i niezbędne do jej prawnie prawidłowej realizacji</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">65</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

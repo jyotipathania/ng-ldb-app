@@ -195,7 +195,7 @@
                     [(ngModel)] = "selectedState" 
                     (change)="fetchCities($event.target.selectedOptions[0].label)"
                     >
-                    <option [ngValue]="undefined" disabled="true" hidden [selected]="true">Please select state</option>
+                    <option [ngValue]="undefined" disabled="true" hidden [selected]="true" i18n="@@JoinFormStatePlaceholder">Please select state</option>
                   <option 
                       *ngFor="let state of states" 
                       [ngValue]="state.state_name"
@@ -363,7 +363,7 @@
                   class="form-control"
                   [(ngModel)]="selectedContract"
                   >               
-                  <option [ngValue]="undefined" disabled="true" hidden [selected]="true">Please select contract</option>     
+                  <option [ngValue]="undefined" disabled="true" hidden [selected]="true" i18n="@@JoinFormContractType">Please select contract</option>     
                 <option 
                     *ngFor = "let contract of contractListItems" 
                     [ngValue]="contract"

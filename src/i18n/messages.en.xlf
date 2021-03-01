@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
-  <file source-language="en-US" datatype="plaintext" original="ng2.template">
+  <file source-language="en" datatype="plaintext" original="ng2.template">
     <body>
       <trans-unit id="HeaderLinkHome" datatype="html">
         <source>Home</source>
@@ -100,106 +100,102 @@
           <context context-type="linenumber">11</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="6fd20ba9c153a12714412f10aa09d1d3d588de38" datatype="html">
+      <trans-unit id="ServiceTagLineSub" datatype="html">
         <source> Services</source>
         <target> Services</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/feature-two/feature-two.component.html</context>
           <context context-type="linenumber">11</context>
         </context-group>
-        <note priority="1" from="description">ServiceTagLineSub</note>
+      </trans-unit> 
+      <trans-unit id="ServiceTagLineSubPara" datatype="html">
+        <source>Providing strategic insight for success</source>
+        <target>Providing strategic insight for success</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/feature-two/feature-two.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
       </trans-unit>
-      <trans-unit id="44fe110aca8d4120a6370d29d9a70f4a106c8d52" datatype="html">
+      <trans-unit id="ServiceHeading1" datatype="html">
         <source>Gastronomy</source>
         <target>Gastronomy</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/feature-two/feature-two.component.html</context>
           <context context-type="linenumber">78</context>
         </context-group>
-        <note priority="1" from="description">ServiceHeading1</note>
-      </trans-unit>
-      <trans-unit id="babe59f9a0b7c9bd52c19fcb3f84f3e424bf6325" datatype="html">
+      </trans-unit>      
+      <trans-unit id="ServicePara1" datatype="html">
         <source>We deal in Shaping Restaurants and and Successful gastronomy concepts.</source>
         <target>We deal in Shaping Restaurants and and Successful gastronomy concepts.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/feature-two/feature-two.component.html</context>
           <context context-type="linenumber">79</context>
         </context-group>
-        <note priority="1" from="description">ServicePara1</note>
       </trans-unit>
-      <trans-unit id="d29e6ad4d18c1ff16942c0370ab205656bd6b2f1" datatype="html">
+   <trans-unit id="ServiceHeading2" datatype="html">
         <source>Real Estate</source>
         <target>Real Estate</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/feature-two/feature-two.component.html</context>
           <context context-type="linenumber">92</context>
         </context-group>
-        <note priority="1" from="description">ServiceHeading2</note>
-      </trans-unit>
-      <trans-unit id="a6e674cd59952db37d8314f7f660c67599b6909c" datatype="html">
+      </trans-unit>     
+      <trans-unit id="ServicePara2" datatype="html">
         <source>We provide comprehensive analysis for executive housing decisions. We help our clients to identify the best investment opportunities in the housing sector.</source>
         <target>We provide comprehensive analysis for executive housing decisions. We help our clients to identify the best investment opportunities in the housing sector.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/feature-two/feature-two.component.html</context>
           <context context-type="linenumber">93</context>
         </context-group>
-        <note priority="1" from="description">ServicePara2</note>
-      </trans-unit>
-      <trans-unit id="7955537239a51923ae0c95fcdc458cd1cf772c8c" datatype="html">
+      </trans-unit>  
+      <trans-unit id="ServiceHeading3" datatype="html">
         <source>Import Export</source>
         <target>Import Export</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/feature-two/feature-two.component.html</context>
           <context context-type="linenumber">108</context>
         </context-group>
-        <note priority="1" from="description">ServiceHeading3</note>
       </trans-unit>
-      <trans-unit id="0c8768c4f3c89534e72289236bfbf089690accb3" datatype="html">
-        <source>Assisting businesses in exporting and importing their goods throughout  the international market.</source>
-        <target>Assisting businesses in exporting and importing their goods throughout  the international market.</target>
+      <trans-unit id="ServicePara3" datatype="html">
+        <source>Assisting businesses in exporting and importing goods throughout the international market.</source>
+         <target>Assisting businesses in exporting and importing goods throughout the international market.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/feature-two/feature-two.component.html</context>
           <context context-type="linenumber">109</context>
         </context-group>
-        <note priority="1" from="description">ServicePara3</note>
-      </trans-unit>
-      <trans-unit id="a8365b7a2245ca296ece9ac7c9abb0f0a4fab747" datatype="html">
+      </trans-unit>     
+      <trans-unit id="ServiceHeading4" datatype="html">
         <source>Logistics and Supply</source>
         <target>Logistics and Supply</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/feature-two/feature-two.component.html</context>
           <context context-type="linenumber">122</context>
         </context-group>
-        <note priority="1" from="description">ServiceHeading4</note>
       </trans-unit>
-      <trans-unit id="c7efbfeb7221435ba69b9bd155ca36d0378b0a34" datatype="html">
+      <trans-unit id="ServicePara4" datatype="html">
         <source>The Logistics and Distribution functions within the Supply Chain encompass transportation, stock control and warehousing. Our consultant ensures that the flow of goods and materials are balanced to the most efficient cost base and aligned with customer requirements.
                       </source>
-                      <target>The Logistics and Distribution functions within the Supply Chain encompass transportation, stock control and warehousing. Our consultant ensures that the flow of goods and materials are balanced to the most efficient cost base and aligned with customer requirements.
-                      </target>
+                       <target>The Logistics and Distribution functions within the Supply Chain encompass transportation, stock control and warehousing. Our consultant ensures that the flow of goods and materials are balanced to the most efficient cost base and aligned with customer requirements.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/feature-two/feature-two.component.html</context>
           <context context-type="linenumber">123</context>
         </context-group>
-        <note priority="1" from="description">ServicePara4</note>
-      </trans-unit>
-      <trans-unit id="9ee36e39e3dcfe413cc81c32554c38af39856a76" datatype="html">
+      </trans-unit>     
+       <trans-unit id="ServiceHeading5" datatype="html">
         <source>IT Services</source>
          <target>IT Services</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/feature-two/feature-two.component.html</context>
           <context context-type="linenumber">139</context>
         </context-group>
-        <note priority="1" from="description">ServiceHeading5</note>
       </trans-unit>
-      <trans-unit id="554bfd1694a49be690a5810a232dfe403b170a40" datatype="html">
+      <trans-unit id="ServicePara5" datatype="html">
         <source>We work closely with our clients to create outstanding high performance and safe custom websites, custom designs, logo designing, e-commerce websites and mobile applications.</source>
-        <target>We work closely with our clients to create outstanding high performance and safe custom websites, custom designs, logo designing, e-commerce websites and mobile applications.</target>        
+        <target>We work closely with our clients to create outstanding high performance and safe custom websites, custom designs, logo designing, e-commerce websites and mobile applications.</target> 
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/feature-two/feature-two.component.html</context>
           <context context-type="linenumber">140</context>
         </context-group>
-        <note priority="1" from="description">ServicePara5</note>
       </trans-unit>
       <trans-unit id="UberPartnershipPara" datatype="html">
         <source>We are registered Uber eats fleet partner. Want to join us?</source>
@@ -475,6 +471,14 @@
           <context context-type="linenumber">184</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="JoinFormStatePlaceholder" datatype="html">
+        <source>Please select state</source>
+        <target>Please select state</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/join-us/join-us.component.html</context>
+          <context context-type="linenumber">198</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="JoinFormStateError" datatype="html">
         <source>
                   Please select a valid state.
@@ -746,15 +750,14 @@
         </context-group>
         <note priority="1" from="description">TeamTagLineSub</note>
       </trans-unit>
-      <trans-unit id="dad00d3f9b81d77dfac116ea0dbe9ec1b3c77795" datatype="html">
-        <source>Trust the professionals</source>
-        <target>Trust the professionals</target>
+        <trans-unit id="TeamDescription" datatype="html">
+        <source>Dedicated team of professionals</source>
+        <target>Dedicated team of professionals</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/team/team.component.html</context>
           <context context-type="linenumber">10</context>
         </context-group>
-        <note priority="1" from="description">TeamDescription</note>
-      </trans-unit>
+      </trans-unit>       
       <trans-unit id="2b47d5bf5d02afcb5db0e6fe6de0e21c807b423a" datatype="html">
         <source>Managing Director</source>
         <target>Managing Director</target>
@@ -799,8 +802,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="PartnerTagPara" datatype="html">
-        <source>Uber Eats, Glovo and Blinkee City  We are working closely with our partner to generate revenue that can be mutually beneficial and provide delivery services across the various cities in poland.</source>
-        <target>Uber Eats, Glovo and Blinkee City  We are working closely with our partner to generate revenue that can be mutually beneficial and provide delivery services across the various cities in poland.</target>
+        <source>We are working closely with our partners &quot;<x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Uber Eats, Glovo and Blinkee.City<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/>&quot; to generate revenue that can be mutually beneficial and provide delivery services across the various cities in poland.</source>
+        <target>We are working closely with our partners &quot;<x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Uber Eats, Glovo and Blinkee.City<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/>&quot; to generate revenue that can be mutually beneficial and provide delivery services across the various cities in poland.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/our-partners/our-partners.component.html</context>
           <context context-type="linenumber">10</context>
